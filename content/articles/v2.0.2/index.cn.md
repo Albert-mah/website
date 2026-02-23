@@ -1,4 +1,3 @@
 ### 🐛 修复
 
-- **[日历]** N/A ([#8498](https://github.com/nocobase/nocobase/pull/8498)) by @sembaev-a-a
-
+- **[日历]** 修复了日历本地化及日期显示格式相关的问题 ([#8498](https://github.com/nocobase/nocobase/pull/8498)) by @sembaev-a-a
