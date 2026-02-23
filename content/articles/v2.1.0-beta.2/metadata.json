@@ -1,14 +1,14 @@
 {
   "id": 904,
-  "title": "NocoBase v2.1.0-beta.2",
-  "title_cn": "NocoBase v2.1.0-beta.2",
-  "title_ja": null,
+  "title": "NocoBase v2.1.0-beta.2: Fix calendar localization and date formatting issues",
+  "title_cn": "NocoBase v2.1.0-beta.2：修复了日历本地化及日期显示格式相关的问题",
+  "title_ja": "NocoBase v2.1.0-beta.2：カレンダーのローカライズおよび日付表示形式に関する不具合を修正",
   "description": "Release Note of v2.1.0-beta.2",
   "description_cn": "v2.1.0-beta.2 更新日志",
-  "description_ja": null,
+  "description_ja": "v2.1.0-beta.2 リリースノート",
   "slug": "v2.1.0-beta.2",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2026-02-22T07:00:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,14 +37,57 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-09-21T12:29:35.856Z",
+      "updatedAt": "2025-09-21T12:29:35.856Z",
+      "id": 234,
+      "title": "beta",
+      "title_cn": null,
+      "sort": 232,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": null,
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 3,
+      "updatedById": 3,
+      "article_sub_tags": {
+        "createdAt": "2026-02-23T15:26:55.950Z",
+        "updatedAt": "2026-02-23T15:26:55.950Z",
+        "articles_id": 904,
+        "tags_id": 234
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2026-02-23T15:25:04.086Z",
+    "updatedAt": "2026-02-23T15:25:04.097Z",
+    "id": 2240,
+    "title": "v2.1.0-beta.2",
+    "filename": "v2.1.0-beta.2-5gnm3r.jpg",
+    "extname": ".jpg",
+    "size": 232937,
+    "mimetype": "image/jpeg",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/v2.1.0-beta.2-5gnm3r.jpg",
+    "preview": "https://static-docs.nocobase.com/v2.1.0-beta.2-5gnm3r.jpg",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
+  "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
-  "ai_generated_ja": null,
-  "updatedAt": "2026-02-22T11:59:31.830Z"
+  "ai_generated_ja": true,
+  "updatedAt": "2026-02-23T15:26:55.937Z"
 }
