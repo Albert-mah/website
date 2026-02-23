@@ -18,12 +18,14 @@ const RUSSIAN_REDIRECT_PATTERNS = [
   /^\/ru\/tutorials\/.*$/,
   /^\/ru\/blog\/.*$/,
   /^\/ru\/highlights\/.*$/,
-  /^\/ru\/solutions\/ticketing-v2$/
+  /^\/ru\/solutions\/ticketing-v2$/,
+  /^\/ru\/solutions\/crm-v2$/
 ];
 
 // Define French pages that should redirect to English
 const FRENCH_REDIRECT_PATTERNS = [
-  /^\/fr\/solutions\/ticketing-v2$/
+  /^\/fr\/solutions\/ticketing-v2$/,
+  /^\/fr\/solutions\/crm-v2$/
 ];
 
 // Define Chinese pages that should redirect to other pages
