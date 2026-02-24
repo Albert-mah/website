@@ -1,10 +1,10 @@
 {
   "id": 903,
   "title": "NocoBase Pricing adjustment",
-  "title_cn": "NocoBase 定价调整",
+  "title_cn": "NocoBase 开源协议和定价调整",
   "title_ja": "NocoBase 価格調整のお知らせ",
-  "description": "We have adjusted the pricing for commercial plugins, commercial plugin bundles, and commercial editions benefits. Additionally, we offer free adjustments for users who have already made purchases.",
-  "description_cn": "对商业插件、商业插件包及商业版本权益进行定价调整，并为已购用户提供免费调整服务。",
+  "description": "We have adjusted the license agreement and the pricing for commercial plugins, commercial plugin bundles, and commercial editions benefits. Additionally, we offer free adjustments for users who have already made purchases.",
+  "description_cn": "对开源许可协议、商业插件、商业插件包及商业版本权益进行调整，并为已购用户提供免费调整服务。",
   "description_ja": "商用プラグイン、商用プラグインバンドル、商用版の特典の価格設定を調整するとともに、既に購入したユーザーに対して無料で調整サービスを提供します。",
   "slug": "pricing-adjustment-202602",
   "publishedAt": "2026-02-15T01:59:11.000Z",
@@ -62,5 +62,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": null,
-  "updatedAt": "2026-02-23T09:35:54.866Z"
+  "updatedAt": "2026-02-24T04:01:04.816Z"
 }
