@@ -5,9 +5,9 @@ import { getPage } from "../../utils";
 
 const page = await getPage("commercial");
 
-const title = page.title_ru || page.title;
-const description = page.description_ru || page.description;
-const keywords = page.keywords_ru || page.keywords;
+const title = page.title_ru;
+const description = page.description_ru;
+const keywords = page.keywords_ru;
 ---
 
 <BaseLayout title={title} description={description} keywords={keywords}>
@@ -26,47 +26,46 @@ const keywords = page.keywords_ru || page.keywords;
       </div>
 
       <div class="row">
-        <div class="col-12 mt-4 pt-2">
+        <div class="col-12 pt-2">
           <div class="timeline-page position-relative">
-            <!--Community Edition-->
             <div class="timeline-item">
               <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-6">
                   <div class="duration date-label-left position-relative text-md-end">
-                    <h5> Community Edition, Бесплатно</h5>
+                    <h5>Community Edition, Бесплатно</h5>
                     <small class="text-muted mb-0">Выбор большинства пользователей</small>
                   </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6 mt-4 mt-sm-0">
                   <div class="event event-description-right float-left text-start">
-                    <h6 class="title mb-1 text-capitalize">Когда подходит</h6>
+                    <h6 class="title mb-1 text-capitalize">Если вам нужно</h6>
                     <ul class="text-muted">
-                      <li>no-code платформа в роли инфраструктуры для создания бизнес-систем и внутренних инструментов</li>
-                      <li>Полный доступ к исходному коду, установка на своих серверах, полный контроль</li>
-                      <li>Широкий функционал, покрывающий большинство сценариев</li>
-                      <li>Возможность расширения под индивидуальные задачи — без привязки к поставщику</li>
-                      <li>Установка и разработка собственных плагинов</li>
-                      <li>Неограниченное количество приложений, пользователей и объёмов данных</li>
-                      <li>Скромное отображение логотипа NocoBase в интерфейсе</li>
-                      <li>Поддержка сообщества NocoBase</li>
-                      <li>Готовность делиться своими плагинами с open source-сообществом</li>
+                      <li>ИИ-платформа без кода как инфраструктура вашей команды для создания бизнес-систем и внутренних инструментов</li>
+                      <li>Полный исходный код, самостоятельный хостинг и полный контроль</li>
+                      <li>Широкие и богатые возможности для удовлетворения большинства потребностей</li>
+                      <li>Большинство возможностей ИИ-сотрудников включено</li>
+                      <li>Свобода расширения без привязки к поставщику и выполнение персонализированных требований</li>
+                      <li>Создание неограниченного числа приложений без ограничений на пользователей или объём данных</li>
+                      <li>Принятие ненавязчивого логотипа NocoBase в интерфейсе</li>
+                      <li>Техническая поддержка от сообщества NocoBase</li>
+                      <li>Готовность делиться своими плагинами с сообществом с открытым исходным кодом</li>
                     </ul>
                   </div>
                 </div><!--end col-->
               </div><!--end row-->
             </div><!--end timeline item-->
-            <!--My NocoBase Enterprise SaaS-->
+
             <div class="timeline-item mt-5 pt-2">
               <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-6">
                   <div class="duration date-label-left position-relative text-md-end">
-                    <h5>Мой NocoBase (облако, скоро), <br/> от 9890 ₽/мес. </h5>
-                    <small class="text-muted mb-0">Для тех, кто хочет всё от NocoBase — <br /> без крупных вложений и иметь <br /> возможность миграции в любой момент</small>
+                    <h5>Мой NocoBase (облако), от 9 890 ₽/мес.</h5>
+                    <small class="text-muted mb-0">Для тех, кто хочет всё от NocoBase —<br>без крупных вложений и иметь<br>возможность миграции в любой момент</small>
                   </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6 mt-4 mt-sm-0">
                   <div class="event event-description-right float-left text-start">
-                    <h6 class="title mb-1 text-capitalize">Если вам нужно:</h6>
+                    <h6 class="title mb-1 text-capitalize">Если вам нужно</h6>
                     <ul class="text-muted">
                       <li>Автоматизировать процессы в небольшой компании или разработать MVP</li>
                       <li>Использовать почти все функции и плагины Enterprise Edition без покупки лицензии</li>
@@ -82,79 +81,87 @@ const keywords = page.keywords_ru || page.keywords;
                 </div><!--end col-->
               </div><!--end row-->
             </div><!--end timeline item-->
-            <!--Standard Edition-->
+
             <div class="timeline-item mt-5 pt-2">
               <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-6">
                   <div class="duration date-label-left position-relative text-md-end">
                     <h5>Standard Edition, 70 000 ₽</h5>
-                    <small class="text-muted mb-0">Лучший вариант для регулярного использования</small>
+                    <small class="text-muted mb-0">Лучший выбор для обычного использования</small>
                   </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6 mt-4 mt-sm-0">
                   <div class="event event-description-right float-left text-start">
-                    <h6 class="title mb-1 text-capitalize">Когда вам нужно</h6>
+                    <h6 class="title mb-1 text-capitalize">Если вам также нужно</h6>
                     <ul class="text-muted">
-                      <li>Хранить свой код и плагины в закрытом виде</li>
-                      <li>Заменить логотип NocoBase на собственный бренд</li>
-                      <li>Получить лицензию навсегда — единоразовая оплата</li>
-                      <li>Использовать 8 баллов для получения коммерческих плагинов</li>
+                      <li>Оставить собственный код и плагины с закрытым исходным кодом</li>
+                      <li>Заменить бренд NocoBase в интерфейсе своим собственным</li>
+                      <li>Подключить внешние базы данных, такие как MySQL и PostgreSQL, к NocoBase как источники данных</li>
+                      <li>Импортировать или экспортировать большие объёмы данных через Excel</li>
+                      <li>Единовременная оплата за пожизненное использование</li>
                     </ul>
                   </div>
                 </div><!--end col-->
               </div><!--end row-->
             </div><!--end timeline item-->
-            <!--Professional Edition-->
+
             <div class="timeline-item mt-5 pt-2">
               <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-6">
                   <div class="duration date-label-left position-relative text-md-end">
                     <h5>Professional Edition, 700 000 ₽</h5>
-                    <small class="text-muted mb-0">Создана для профессиональных команд и высоких требований</small>
+                    <small class="text-muted mb-0">Отвечает потребностям профессиональных команд</small>
                   </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6 mt-4 mt-sm-0">
                   <div class="event event-description-right float-left text-start">
-                    <h6 class="title mb-1 text-capitalize">Подходит, когда вам необходимо</h6>
+                    <h6 class="title mb-1 text-capitalize">Если вам также нужно</h6>
                     <ul class="text-muted">
-                      <li>Архитектура «родитель-дочерние приложения» для управления несколькими инстансами</li>
-                      <li>Регулярное автоматическое резервное копирование данных</li>
-                      <li>Повышенная безопасность и производительность</li>
-                      <li>Поддержка окружений: dev / test / prod</li>
-                      <li>Приоритетная техническая поддержка от команды NocoBase</li>
-                      <li>64 балла для использования коммерческих плагинов</li>
+                      <li>Создавать приложения для ваших клиентов с помощью NocoBase</li>
+                      <li>Предоставить ИИ-сотрудникам расширенные возможности</li>
+                      <li>Единый вход (SSO)</li>
+                      <li>Расширенные возможности рабочих процессов: согласования, подпроцессы и вебхуки</li>
+                      <li>Усиленные возможности безопасности</li>
+                      <li>Запись и отображение полной истории редактирования каждой записи</li>
+                      <li>Запланированное автоматическое резервное копирование данных</li>
+                      <li>Повышенные требования к процессам разработки с окружениями разработки, тестирования и производства</li>
+                      <li>Специализированное консультирование по использованию от команды NocoBase</li>
                     </ul>
                   </div>
                 </div><!--end col-->
               </div><!--end row-->
             </div><!--end timeline item-->
-            <!--Enterprise Edition-->
+
             <div class="timeline-item mt-5 pt-2">
               <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-6">
                   <div class="duration date-label-left position-relative text-md-end">
                     <h5>Enterprise Edition, Свяжитесь с нами</h5>
-                    <small class="text-muted mb-0">Для крупных приложений, корпоративных клиентов и технологических лидеров</small>
+                    <small class="text-muted mb-0">Отвечает потребностям крупных приложений и предприятий</small>
                   </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6 mt-4 mt-sm-0">
                   <div class="event event-description-right float-left text-start">
-                    <h6 class="title mb-1 text-capitalize">Подходит, когда вам нужно:</h6>
+                    <h6 class="title mb-1 text-capitalize">Если вам также нужно</h6>
                     <ul class="text-muted">
-                      <li>Разрабатывать приложения для клиентов и партнёров</li>
-                      <li>Многоуровневая архитектура и кластерные инсталляции</li>
-                      <li>Подробное логирование всех действий пользователей</li>
-                      <li>Полноценная телеметрия: логи, метрики, трассировка</li>
-                      <li>Интеграция LLM-моделей и ИИ-функции на всех уровнях системы</li>
-                      <li>Приоритет реализации нужных вам функций в Дорожной карте NocoBase</li>
-                      <li>Возможность индивидуальной разработки расширений под ваши задачи от команды NocoBase</li>
-                      <li>Безлимитный доступ ко всем текущим и будущим коммерческим плагинам выпущенным в течении года</li>
+                      <li>Кластерное развёртывание приложений NocoBase</li>
+                      <li>Детальное протоколирование каждого действия пользователя для аудита</li>
+                      <li>Подключение внешних источников данных, таких как Oracle, ClickHouse и Doris, к NocoBase</li>
+                      <li>Использование архитектуры множества приложений для развёртывания и управления несколькими приложениями в мультитенантных сценариях</li>
+                      <li>Использование функции множества пространств для развёртывания и управления несколькими пространствами в сценариях мультимагазина или мультипроизводства</li>
+                      <li>Профессиональные требования к телеметрии, включая журналы, показатели мониторинга и трассировку</li>
+                      <li>Интеграция Gmail, Outlook и других почтовых сервисов, а также использование функций, таких как согласования с рукописной подписью</li>
+                      <li>Предоставить ИИ-сотрудникам расширенные возможности</li>
+                      <li>Доступ к полному исходному коду коммерческой редакции</li>
+                      <li>Приоритетное планирование необходимых функций в дорожной карте NocoBase</li>
+                      <li>Более быстрый отклик и расширенная специализированная поддержка от команды NocoBase</li>
+                      <li>Специализированные решения по разработке расширений от команды NocoBase, включая плагины и интеграции сторонних систем</li>
                     </ul>
                   </div>
                 </div><!--end col-->
               </div><!--end row-->
             </div><!--end timeline item-->
-            <!--White Label Edition-->
+
 
           </div><!--end timeline page-->
           <!-- TIMELINE END -->
@@ -180,361 +187,1250 @@ const keywords = page.keywords_ru || page.keywords;
       <div class="row align-items-center">
         <div class="col-12">
           <div class="component-wrapper">
-            <div class="p-4">
-              <div class="table-responsive bg-white">
-                <table class="table mb-0 table-center commercial-table">
-                  <thead class="">
-                  <tr>
-                    <th scope="col" class="col-sm-4"></th>
-                    <th scope="col" class="col-sm-2"><h5 class="text-primary mb-0">Community<br>Edition</h5></th>
-                    <th scope="col" class="col-sm-2"><h5 class="text-primary mb-0">Мой<br>NocoBase</h5></th>
-                    <th scope="col" class="col-sm-2"><h5 class="text-primary mb-0">Standard<br>Edition</h5></th>
-                    <th scope="col" class="col-sm-2"><h5 class="text-primary mb-0">Professional<br>Edition</h5></th>
-                    <th scope="col" class="col-sm-2"><h5 class="text-primary mb-0">Enterprise<br>Edition</h5></th>
-                  </tr>
-                  </thead>
-                  <tbody>
-                  <tr>
-                    <td class="compare-item text-muted">Цены</td>
-                    <td class="fw-bold fst-italic">Бесплатно</td>
-                    <td class="fw-bold fst-italic">от 9890₽ \ в месяц</td>
-                    <td class="fw-bold fst-italic">70 000 ₽</td>
-                    <td class="fw-bold fst-italic">700 000 ₽</td>
-                    <td class="fw-bold fst-italic">Свяжитесь с нами</td>
-                  </tr>
-                  <tr>
-                    <th class="compare-item">Лицензия</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">Тип лицензии</td>
-                    <td>AGPL 3.0</td>
-                    <td>Коммерческая лицензия</td>
-                    <td>Коммерческая лицензия</td>
-                    <td>Коммерческая лицензия</td>
-                    <td>Коммерческая лицензия</td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">Бессрочная лицензия<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Лицензия действует пожизненно: вы можете использовать NocoBase постоянно без дополнительной оплаты."> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td>Облако</td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">Поддержка обновлений<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Когда срок обновлений закончится — вы всё равно сможете бессрочно использовать свою текущую версию без каких-либо дополнительных платежей."> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
-                    <td>-</td>
-                    <td>Облако</td>
-                    <td>1 год</td>
-                    <td>1 год</td>
-                    <td>1 год</td>
-                  </tr>
-                  <tr>
-                    <th class="compare-item">Коммерческие плагины</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">Включённые пакеты плагинов<a href="/ru/plugins-bundles" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Подробнее"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
-                    <td>-</td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-danger me-2 mt-1"></i><a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="В облачную редакцию входит большая часть коммерческих плагинов, исключения составляют плагины которые требуют выделенный сервер или возможность неграниченного портебления ресурсов"> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
-                    <td>Пакет 8</td>
-                    <td>Пакет 64</td>
-                    <td>Все разработанные коммерческие плагины</td>
-                  </tr>
-                  <tr>
-                    <th class="compare-item">Без ограничений</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">Пользователи</td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-danger me-2 mt-1"></i><a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Только ресурсы тарифа"> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">Колличество приложений</td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-danger me-2 mt-1"></i><a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Только ресурсы тарифа"> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">Записей в базу</td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-danger me-2 mt-1"></i><a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Только ресурсы тарифа"> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">Установка бесплатных или коммерческих плагинов</td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i><a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Все доступные коммерческие плагины для облака уже включены и не требуется дополнительная установка"> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">Разработка для внутреннего использования</td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">Возможность не передавать исходный код</td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i><a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Ваш модифицированый код NocoBase и плагины должны быть открыты под AGPL 3.0"> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted text-nowrap">Убрать копирайт</td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i><a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Запрещается изменять или удалять информацию об авторских правах и версии NocoBase в интерфейсе."> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">Разработка приложений для клиента</td>
-                    <td>-</td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <th class="compare-item">Возможности</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">Поддержка нескольких приложений **<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Взаимодействие между экземплярами NocoBase по принципу «родитель-ребёнок»"> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-danger me-2 mt-1"></i><a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Использовать только на высоких тарифах, так как разворачивается полноценная версия в том же контейнере"> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">Контроль версий и миграции<a href="https://docs.nocobase.com/handbook/release-management" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Подробнее"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">Кластерное развёртывание<a href="https://docs.nocobase.com/welcome/getting-started/deployment/cluster-mode" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Подробнее"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">Телеметрия<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Сбор логов и метрик"> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <th class="compare-item">Сотрудники ИИ<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Внедряйте AI-ассистентов с разными специализациями для оптимизации бизнес-процессов."> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">Скоро ...</td>
-                    <td style="font-size: 20px;"><i class="fea icon-ex-md me-2 mt-1 uil uil-smile"></i></td>
-                    <td style="font-size: 20px;"><i class="fea icon-ex-md me-2 mt-1 uil uil-smile"></i></td>
-                    <td style="font-size: 20px;"><i class="fea icon-ex-md me-2 mt-1 uil uil-smile-beam"></i></td>
-                    <td style="font-size: 20px;"><i class="fea icon-ex-md me-2 mt-1 uil uil-grin"></i></td>
-                    <td style="font-size: 20px;"><i class="fea icon-ex-md me-2 mt-1 uil uil-laughing"></i></td>
-                  </tr>
-                  <tr>
-                    <th class="compare-item">Безопасность</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">Шифрование данных<a href="https://docs.nocobase.com/handbook/environment-variables" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Подробнее"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">Политика токенов<a href="https://docs.nocobase.com/handbook/token-policy" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Подробнее"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">Политика паролей<a href="https://docs.nocobase.com/handbook/password-policy" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Подробнее"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">Блокировка пользователя<a href="https://docs.nocobase.com/handbook/password-policy/user-lockout" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Подробнее"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">Автоматическое резервное копирование<a href="https://docs.nocobase.com/handbook/backups" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Подробнее"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">Шифрование API<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Обеспечивается шифрование данных при передаче по протоколу HTTP"> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">Ограничение по IP-адресам<a href="https://docs.nocobase.com/handbook/IP-restriction" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Подробнее"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">Двухфакторная аутентификация<a href="https://docs.nocobase.com/handbook/two-factor-authentication" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Подробнее"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">Журнал аудита<a href="https://docs.nocobase.com/handbook/audit-logger" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Подробнее"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <th class="compare-item">Поддержка</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">Поддержка сообщества</td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">Приоритетное исправление ошибок</td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">Консультации по использованию</td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">Консультации по разработке</td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">Приоритет внедрения новых функций</td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
-                    <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">Период поддержки</td>
-                    <td>-</td>
-                    <td>Аренда</td>
-                    <td>1 год</td>
-                    <td>1 год</td>
-                    <td>1 год</td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">Количество вопросов по использованию<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Вы получаете квоту обращений в службу поддержки (не считая отчётов об ошибках) с возможностью расширения лимита."> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
-                    <td>-</td>
-                    <td>3\мес</td>
-                    <td>-</td>
-                    <td>15</td>
-                    <td>30</td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">Количество тикетов по разработке<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="В рамках поддержки специалисты NocoBase помогают с: созданием плагинов, подключением сторонних сервисов, документированием и доработкой ядра. Возможно расширение лимита обращений за доплату."> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>3</td>
-                  </tr>
-                  <tr>
-                    <td class="compare-item text-muted">Время первого ответа</td>
-                    <td>-</td>
-                    <td>4 часа</td>
-                    <td>24 часа</td>
-                    <td>12 часов</td>
-                    <td>4 часа</td>
-                  </tr>
-                  </tbody>
-                </table>
+            <div class="">
+              <div class="accordion" id="commercialPricingAccordion">
+                <div class="accordion-item rounded">
+                  <h2 class="accordion-header" id="pricing-heading-license">
+                    <button class="accordion-button border-0 bg-light" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#pricing-collapse-license" aria-expanded="true" aria-controls="pricing-collapse-license">
+                      Лицензия
+                    </button>
+                  </h2>
+                  <div id="pricing-collapse-license" class="accordion-collapse border-0 collapse show"
+                       aria-labelledby="pricing-heading-license" data-bs-parent="#commercialPricingAccordion">
+                    <div class="accordion-body p-0">
+                      <div class="table-responsive bg-white">
+                        <table class="table mb-0 table-center commercial-table">
+                          <thead class="">
+                          <tr>
+                            <th scope="col" class="col-md-3 text-nowrap"></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Community Edition</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Мой NocoBase</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Standard Edition</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Professional Edition</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Enterprise Edition</h5></th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          <tr>
+                            <td class="compare-item text-muted">Цена</td>
+                            <td class="fw-bold fst-italic">Бесплатно</td>
+                            <td class="fw-bold fst-italic">от 9 890 ₽<br><small class="fw-normal">в месяц</small></td>
+                            <td class="fw-bold fst-italic">70 000 ₽</td>
+                            <td class="fw-bold fst-italic">700 000 ₽</td>
+                            <td class="fw-bold fst-italic">Свяжитесь с нами</td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Тип лицензии</td>
+                            <td class="text-nowrap">Лицензия сообщества<a href="https://www.nocobase.com/ru/agreement" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Подробнее"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td class="text-nowrap">Коммерческая лицензия<a href="https://www.nocobase.com/ru/agreement" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Подробнее"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td class="text-nowrap">Коммерческая лицензия<a href="https://www.nocobase.com/ru/agreement" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Подробнее"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td class="text-nowrap">Коммерческая лицензия<a href="https://www.nocobase.com/ru/agreement" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Подробнее"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td class="text-nowrap">Коммерческая лицензия<a href="https://www.nocobase.com/ru/agreement" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Подробнее"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Бессрочная лицензия<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Лицензия действует бессрочно, то есть вы можете использовать NocoBase постоянно без необходимости повторной оплаты."> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td>Облако</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Период обновлений<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="После получения лицензии вы можете перейти на последнюю версию в любое время в течение периода действия обновлений. После окончания периода обновлений вы по-прежнему можете использовать её бесплатно бессрочно."> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
+                            <td>-</td>
+                            <td>Облако</td>
+                            <td>1 год</td>
+                            <td>1 год</td>
+                            <td>1 год</td>
+                          </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item rounded mt-2">
+                  <h2 class="accordion-header" id="pricing-heading-limits">
+                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#pricing-collapse-limits" aria-expanded="false" aria-controls="pricing-collapse-limits">
+                      Ограничения использования
+                    </button>
+                  </h2>
+                  <div id="pricing-collapse-limits" class="accordion-collapse border-0 collapse"
+                       aria-labelledby="pricing-heading-limits" data-bs-parent="#commercialPricingAccordion">
+                    <div class="accordion-body p-0">
+                      <div class="table-responsive bg-white">
+                        <table class="table mb-0 table-center commercial-table">
+                          <thead class="">
+                          <tr>
+                            <th scope="col" class="col-md-3 text-nowrap"></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Community Edition</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Мой NocoBase</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Standard Edition</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Professional Edition</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Enterprise Edition</h5></th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          <tr>
+                            <td class="compare-item text-muted">Неограниченное количество пользователей</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-danger me-2 mt-1"></i><a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Только ресурсы тарифа"> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Неограниченное количество приложений</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-danger me-2 mt-1"></i><a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Только ресурсы тарифа"> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Неограниченное количество записей</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-danger me-2 mt-1"></i><a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Только ресурсы тарифа"> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Разработка приложений для внутреннего использования</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Оставить собственный код и плагины с закрытым исходным кодом</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i><a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Ваш собственный код и плагины должны быть с открытым исходным кодом по лицензии AGPL 3.0."> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Использование собственного бренда в интерфейсе</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i><a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Информация об авторских правах и версии NocoBase в интерфейсе не может быть изменена или удалена."> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Разработка приложений для клиентов</td>
+                            <td>-</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Доступ к исходному коду коммерческой редакции</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item rounded mt-2">
+                  <h2 class="accordion-header" id="pricing-heading-core">
+                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#pricing-collapse-core" aria-expanded="false" aria-controls="pricing-collapse-core">
+                      Основные функции
+                    </button>
+                  </h2>
+                  <div id="pricing-collapse-core" class="accordion-collapse border-0 collapse"
+                       aria-labelledby="pricing-heading-core" data-bs-parent="#commercialPricingAccordion">
+                    <div class="accordion-body p-0">
+                      <div class="table-responsive bg-white">
+                        <table class="table mb-0 table-center commercial-table">
+                          <thead class="">
+                          <tr>
+                            <th scope="col" class="col-md-3 text-nowrap"></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Community Edition</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Мой NocoBase</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Standard Edition</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Professional Edition</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Enterprise Edition</h5></th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          <tr>
+                            <td class="compare-item text-muted text-nowrap">Разработка на основе модели данных<a href="https://v2.docs.nocobase.com/data-sources" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Подробнее"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Разработка на основе ИИ</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">WYSIWYG-разработка<a href="https://v2.docs.nocobase.com/interface-builder" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Подробнее"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">ИИ-сотрудники<a href="https://v2.docs.nocobase.com/ai-employees" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Подробнее"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Аутентификация пользователей<a href="https://v2.docs.nocobase.com/auth-verification/auth" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Подробнее"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Роли и права доступа<a href="https://v2.docs.nocobase.com/users-permissions/user" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Подробнее"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Рабочий процесс<a href="https://v2.docs.nocobase.com/workflow/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Подробнее"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Поток событий<a href="https://v2.docs.nocobase.com/interface-builder/event-flow" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Подробнее"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Уведомления<a href="https://v2.docs.nocobase.com/notification-manager" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Подробнее"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Локализация<a href="https://v2.docs.nocobase.com/system-management/localization/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Подробнее"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item rounded mt-2">
+                  <h2 class="accordion-header" id="pricing-heading-architecture">
+                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#pricing-collapse-architecture" aria-expanded="false" aria-controls="pricing-collapse-architecture">
+                      Архитектура
+                    </button>
+                  </h2>
+                  <div id="pricing-collapse-architecture" class="accordion-collapse border-0 collapse"
+                       aria-labelledby="pricing-heading-architecture" data-bs-parent="#commercialPricingAccordion">
+                    <div class="accordion-body p-0">
+                      <div class="table-responsive bg-white">
+                        <table class="table mb-0 table-center commercial-table">
+                          <thead class="">
+                          <tr>
+                            <th scope="col" class="col-md-3 text-nowrap"></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Community Edition</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Мой NocoBase</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Standard Edition</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Professional Edition</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Enterprise Edition</h5></th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          <tr>
+                            <td class="compare-item text-muted">Архитектура плагинов</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Управление миграцией и релизами<a href="https://v2.docs.nocobase.com/ops-management/release-management" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Подробнее"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Несколько приложений<a href="https://v2.docs.nocobase.com/multi-app/multi-app/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Подробнее"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Несколько пространств<a href="https://v2.docs.nocobase.com/multi-app/multi-space" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Подробнее"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Кластерная архитектура<a href="https://v2.docs.nocobase.com/cluster-mode" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Подробнее"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Телеметрия<a href="https://v2.docs.nocobase.com/log-and-monitor/telemetry/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Подробнее"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item rounded mt-2">
+                  <h2 class="accordion-header" id="pricing-heading-data-source">
+                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#pricing-collapse-data-source" aria-expanded="false" aria-controls="pricing-collapse-data-source">
+                      Источники данных
+                    </button>
+                  </h2>
+                  <div id="pricing-collapse-data-source" class="accordion-collapse border-0 collapse"
+                       aria-labelledby="pricing-heading-data-source" data-bs-parent="#commercialPricingAccordion">
+                    <div class="accordion-body p-0">
+                      <div class="table-responsive bg-white">
+                        <table class="table mb-0 table-center commercial-table">
+                          <thead class="">
+                          <tr>
+                            <th scope="col" class="col-md-3 text-nowrap"></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Community Edition</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Мой NocoBase</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Standard Edition</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Professional Edition</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Enterprise Edition</h5></th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          <tr>
+                            <td class="compare-item text-muted">Основной источник данных: MySQL</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Основной источник данных: PostgreSQL</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Основной источник данных: MariaDB</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Внешний источник данных: MySQL</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Внешний источник данных: PostgreSQL</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Внешний источник данных: MariaDB</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Внешний источник данных: MSSQL</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Внешний источник данных: Rest API</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Внешний источник данных: Oracle</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Внешний источник данных: ClickHouse</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Внешний источник данных: Doris</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item rounded mt-2">
+                  <h2 class="accordion-header" id="pricing-heading-permissions">
+                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#pricing-collapse-permissions" aria-expanded="false" aria-controls="pricing-collapse-permissions">
+                      Роли и права доступа
+                    </button>
+                  </h2>
+                  <div id="pricing-collapse-permissions" class="accordion-collapse border-0 collapse"
+                       aria-labelledby="pricing-heading-permissions" data-bs-parent="#commercialPricingAccordion">
+                    <div class="accordion-body p-0">
+                      <div class="table-responsive bg-white">
+                        <table class="table mb-0 table-center commercial-table">
+                          <thead class="">
+                          <tr>
+                            <th scope="col" class="col-md-3 text-nowrap"></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Community Edition</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Мой NocoBase</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Standard Edition</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Professional Edition</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Enterprise Edition</h5></th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          <tr>
+                            <td class="compare-item text-muted">Системные права доступа</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Права доступа на уровне полей для источников данных</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Права доступа маршрутов</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Права доступа ИИ-сотрудников</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item rounded mt-2">
+                  <h2 class="accordion-header" id="pricing-heading-ai-workers">
+                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#pricing-collapse-ai-workers" aria-expanded="false" aria-controls="pricing-collapse-ai-workers">
+                      ИИ-сотрудники
+                    </button>
+                  </h2>
+                  <div id="pricing-collapse-ai-workers" class="accordion-collapse border-0 collapse"
+                       aria-labelledby="pricing-heading-ai-workers" data-bs-parent="#commercialPricingAccordion">
+                    <div class="accordion-body p-0">
+                      <div class="table-responsive bg-white">
+                        <table class="table mb-0 table-center commercial-table">
+                          <thead class="">
+                          <tr>
+                            <th scope="col" class="col-md-3 text-nowrap"></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Community Edition</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Мой NocoBase</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Standard Edition</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Professional Edition</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Enterprise Edition</h5></th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          <tr>
+                            <td class="compare-item text-muted">Встроенные ИИ-сотрудники</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Свободное расширение ИИ-сотрудников</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Система разработки ИИ-сотрудников</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">ИИ-сотрудники выполняют бизнес-задачи</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Подключение к популярным LLM</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Использование инструментов и навыков</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Использование баз знаний RAG</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item rounded mt-2">
+                  <h2 class="accordion-header" id="pricing-heading-workflow">
+                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#pricing-collapse-workflow" aria-expanded="false" aria-controls="pricing-collapse-workflow">
+                      Рабочий процесс
+                    </button>
+                  </h2>
+                  <div id="pricing-collapse-workflow" class="accordion-collapse border-0 collapse"
+                       aria-labelledby="pricing-heading-workflow" data-bs-parent="#commercialPricingAccordion">
+                    <div class="accordion-body p-0">
+                      <div class="table-responsive bg-white">
+                        <table class="table mb-0 table-center commercial-table">
+                          <thead class="">
+                          <tr>
+                            <th scope="col" class="col-md-3 text-nowrap"></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Community Edition</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Мой NocoBase</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Standard Edition</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Professional Edition</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Enterprise Edition</h5></th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          <tr>
+                            <td class="compare-item text-muted">Движок рабочего процесса<a href="https://v2.docs.nocobase.com/workflow" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Подробнее"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Триггер: Событие коллекции</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Триггер: Запланированная задача</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Триггер: Событие до действия</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Триггер: Событие после действия</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Триггер: Пользовательское событие действия</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Узел: LLM</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Узел: Условие</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Узел: Множественные условия</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Узел: Цикл</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Узел: Переменная</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Узел: Параллельная ветвь</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Узел: Маппинг переменных JSON</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Узел: Задержка</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Узел: Завершение рабочего процесса</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Узел: Вычисление</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Узел: Вычисление дат</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Узел: Вычисление JSON</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Узел: Создание данных</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Узел: Обновление данных</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Узел: Удаление данных</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Узел: Запрос данных</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Узел: Агрегированный запрос</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Узел: SQL-действие</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Узел: Ручная обработка</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Узел: Копия</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Узел: HTTP-запрос</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Узел: JavaScript</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Узел: Отправка письма</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Узел: Уведомление</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Узел: Ответ</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Узел: Сообщение ответа</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Согласование<a href="https://v2.docs.nocobase.com/workflow/triggers/approval" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Подробнее"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Подпроцесс<a href="https://v2.docs.nocobase.com/workflow/nodes/subflow" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Подробнее"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Вебхук<a href="https://v2.docs.nocobase.com/workflow/triggers/webhook" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Подробнее"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item rounded mt-2">
+                  <h2 class="accordion-header" id="pricing-heading-security">
+                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#pricing-collapse-security" aria-expanded="false" aria-controls="pricing-collapse-security">
+                      Безопасность и аутентификация
+                    </button>
+                  </h2>
+                  <div id="pricing-collapse-security" class="accordion-collapse border-0 collapse"
+                       aria-labelledby="pricing-heading-security" data-bs-parent="#commercialPricingAccordion">
+                    <div class="accordion-body p-0">
+                      <div class="table-responsive bg-white">
+                        <table class="table mb-0 table-center commercial-table">
+                          <thead class="">
+                          <tr>
+                            <th scope="col" class="col-md-3 text-nowrap"></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Community Edition</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Мой NocoBase</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Standard Edition</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Professional Edition</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Enterprise Edition</h5></th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          <tr>
+                            <td class="compare-item text-muted">Переменные и секреты<a href="https://v2.docs.nocobase.com/ops-management/variables-and-secrets/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Подробнее"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Политика токенов<a href="https://v2.docs.nocobase.com/security/token-policy/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Подробнее"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Маскирование полей</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Шифрование полей<a href="https://v2.docs.nocobase.com/data-sources/field-encryption" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Подробнее"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Политика паролей<a href="https://v2.docs.nocobase.com/security/password-policy/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Подробнее"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Блокировка пользователя<a href="https://v2.docs.nocobase.com/security/password-policy/lockout" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Подробнее"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Автоматическое резервное копирование<a href="https://v2.docs.nocobase.com/ops-management/backup-manager" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Подробнее"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">История записей<a href="https://v2.docs.nocobase.com/record-history/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Подробнее"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">SSO<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="OIDC, SAML, LDAP, CAS, DingTalk"> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a><a href="https://v2.docs.nocobase.com/integration/sso/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Подробнее"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Зашифрованная передача API<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Данные шифруются при HTTP-передаче"> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Ограничение по IP<a href="https://v2.docs.nocobase.com/security/ip-restriction/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Подробнее"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Журнал аудита<a href="https://v2.docs.nocobase.com/security/audit-logger/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Подробнее"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Двухфакторная аутентификация (2FA)<a href="https://v2.docs.nocobase.com/auth-verification/2fa/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Подробнее"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item rounded mt-2">
+                  <h2 class="accordion-header" id="pricing-heading-other">
+                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#pricing-collapse-other" aria-expanded="false" aria-controls="pricing-collapse-other">
+                      Прочее
+                    </button>
+                  </h2>
+                  <div id="pricing-collapse-other" class="accordion-collapse border-0 collapse"
+                       aria-labelledby="pricing-heading-other" data-bs-parent="#commercialPricingAccordion">
+                    <div class="accordion-body p-0">
+                      <div class="table-responsive bg-white">
+                        <table class="table mb-0 table-center commercial-table">
+                          <thead class="">
+                          <tr>
+                            <th scope="col" class="col-md-3 text-nowrap"></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Community Edition</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Мой NocoBase</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Standard Edition</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Professional Edition</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Enterprise Edition</h5></th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          <tr>
+                            <td class="compare-item text-muted">Импорт/экспорт Excel</td>
+                            <td>Малый объём<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="До 2 000 строк за один импорт/экспорт"><i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
+                            <td>Большой объём<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Десятки тысяч строк за один импорт/экспорт"><i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
+                            <td>Большой объём<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Десятки тысяч строк за один импорт/экспорт"><i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
+                            <td>Большой объём<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Десятки тысяч строк за один импорт/экспорт"><i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
+                            <td>Большой объём<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Десятки тысяч строк за один импорт/экспорт"><i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Приватный доступ к файлам<a href="https://v2.docs.nocobase.com/data-sources/file-manager/storage/s3-pro" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Подробнее"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Рукописные подписи</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Печать по шаблону<a href="https://v2.docs.nocobase.com/template-print/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Подробнее"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Интеграция электронной почты<a href="https://v2.docs.nocobase.com/email-manager/" target="_blank" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="Подробнее"> <i class="fea icon-ex-md me-2 mt-1 uil uil-external-link-alt"></i></a></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item rounded mt-2">
+                  <h2 class="accordion-header" id="pricing-heading-support">
+                    <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#pricing-collapse-support" aria-expanded="false" aria-controls="pricing-collapse-support">
+                      Поддержка
+                    </button>
+                  </h2>
+                  <div id="pricing-collapse-support" class="accordion-collapse border-0 collapse"
+                       aria-labelledby="pricing-heading-support" data-bs-parent="#commercialPricingAccordion">
+                    <div class="accordion-body p-0">
+                      <div class="table-responsive bg-white">
+                        <table class="table mb-0 table-center commercial-table">
+                          <thead class="">
+                          <tr>
+                            <th scope="col" class="col-md-3 text-nowrap"></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Community Edition</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Мой NocoBase</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Standard Edition</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Professional Edition</h5></th>
+                            <th scope="col" class="col-md-2 text-nowrap"><h5 class="text-primary mb-0">Enterprise Edition</h5></th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          <tr>
+                            <td class="compare-item text-muted">Поддержка сообщества</td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Выделенное и своевременное исправление ошибок</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Специализированное консультирование по использованию</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Специализированное консультирование по разработке расширений</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Приоритетное планирование новых функций</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Телефонная поддержка</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Поддержка через чат</td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="x" class="fea icon-ex-md text-danger me-2 mt-1"></i></td>
+                            <td><i data-feather="check" class="fea icon-ex-md text-primary me-2 mt-1"></i></td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Период поддержки</td>
+                            <td>-</td>
+                            <td>Аренда</td>
+                            <td>1 год</td>
+                            <td>1 год</td>
+                            <td>1 год</td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Количество обращений по использованию<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="В течение периода поддержки вы можете получить поддержку по использованию для определённого количества обращений (исключая сообщения об ошибках). Сверх этого лимита дополнительные обращения можно приобрести отдельно."> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
+                            <td>-</td>
+                            <td>3/мес</td>
+                            <td>-</td>
+                            <td>Неограниченно</td>
+                            <td>Неограниченно</td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Количество обращений по разработке<a href="javascript:void" class="text-muted" data-bs-toggle="tooltip" data-bs-placement="top" title="В течение периода поддержки основная команда NocoBase помогает вам разрабатывать плагины, интегрировать сторонние системы, включая написание документации и основного кода. Сверх этого лимита дополнительные обращения можно приобрести отдельно."> <i class="fea icon-ex-md me-2 mt-1 uil uil-question-circle" style="font-size: 18px;"></i></a></td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>3</td>
+                          </tr>
+                          <tr>
+                            <td class="compare-item text-muted">Время первого ответа</td>
+                            <td>-</td>
+                            <td>4 часа</td>
+                            <td>24 hours</td>
+                            <td>12 hours</td>
+                            <td>4 hours</td>
+                          </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <p class="para-desc text-muted fst-italic">Функционал с пометкой ** появится во II квартале 2025 г. || MVP (Minimum Viable Product) – Минимально жизнеспособный продукт || Self-host – самостоятельное размещение (на своих серверах)</p>
             </div>
           </div>
         </div>
@@ -549,7 +1445,7 @@ const keywords = page.keywords_ru || page.keywords;
       <div class="row justify-content-center">
         <div class="col-12">
           <div class="section-title text-center mb-4 pb-2">
-            <h3 class="mb-4">Ответы на частые вопросы</h3>
+            <h3 class="mb-4">Часто задаваемые вопросы</h3>
           </div>
         </div><!--end col-->
       </div><!--end row-->
@@ -557,127 +1453,75 @@ const keywords = page.keywords_ru || page.keywords;
       <div class="row justify-content-center">
         <div class="col-lg-9">
           <div class="accordion" id="accordionExample">
+
             <div class="accordion-item rounded mt-2">
               <h2 class="accordion-header" id="heading1-1">
                 <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapse1-1" aria-expanded="false" aria-controls="collapse1-1">
-                  Что такое "Бессрочная лицензия"?
+                  Что означает «Бессрочная лицензия»?
                 </button>
               </h2>
               <div id="collapse1-1" class="accordion-collapse border-0 collapse" aria-labelledby="heading1-1"
                    data-bs-parent="#accordionExample">
                 <div class="accordion-body text-muted">
-                  <p class="answer text-muted mb-0">
-                    Это значит, что у лицензии нет срока окончания, и вам не нужно платить ежегодно.
-                    После покупки коммерческой лицензии или плагина вы получаете бессрочную лицензию для постоянного использования</p>
+                  <p class="answer text-muted mb-0">Срока действия нет, и вам не нужно платить ежегодно. После покупки коммерческой лицензии вы получаете бессрочную лицензию для постоянного использования.</p>
                 </div>
               </div>
             </div>
-            <!--Как продолжить получать обновления и техническую поддержку после окончания срока действия периода обновлений?-->
+
             <div class="accordion-item rounded mt-2">
               <h2 class="accordion-header" id="heading1-2">
                 <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapse1-2" aria-expanded="false" aria-controls="collapse1-2">
-                  Как продолжить получать обновления и техническую поддержку после окончания срока действия периода обновлений?
+                  Как продолжать получать обновления и техническую поддержку после истечения периода действия обновлений?
                 </button>
               </h2>
               <div id="collapse1-2" class="accordion-collapse border-0 collapse" aria-labelledby="heading1-2"
                    data-bs-parent="#accordionExample">
                 <div class="accordion-body text-muted">
-                  <p class="answer text-muted mb-0">
-                    После окончания срока действия обновлений вы можете использовать свою текущую версию NocoBase.
-                    Продлить доступ к обновлениям на 1 год можно за 30% от стоимости лицензии на момент обновления.
-                    Техническую поддержку также можно продлить на 1 год отдельно за 30% от стоимости лицензии на момент обновления.
-                    Обновления и поддержка приобретаются вместе или по отдельности.</p>
+                  <p class="answer text-muted mb-0">После истечения периода действия обновлений вы по-прежнему можете использовать текущую версию NocoBase бессрочно. Вы можете повторно приобрести 1 год обновлений продукта и технической поддержки за 30% от цены первоначального года.</p>
                 </div>
               </div>
             </div>
+
             <div class="accordion-item rounded mt-2">
               <h2 class="accordion-header" id="heading2">
                 <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2"
                         aria-expanded="false" aria-controls="collapse2">
-                  Нужно ли покупать коммерческую лицензию для использования в коммерческих целях?
+                  Нужно ли приобретать коммерческую лицензию для использования в коммерческой среде?
                 </button>
               </h2>
               <div id="collapse2" class="accordion-collapse border-0 collapse" aria-labelledby="heading2"
                    data-bs-parent="#accordionExample">
                 <div class="accordion-body text-muted">
-                  <p class="answer text-muted mb-0">
-                    Нет. Основная версия NocoBase и плагины имеют открытый исходный код и распространяются под лицензией AGPL 3.0.
-                    Если вы соблюдаете условия лицензии и сохраняете на интерфейсе информацию об авторских правах и версии NocoBase, вы можете использовать систему бесплатно.</p>
+                  <p class="answer text-muted mb-0">Нет. Ядро NocoBase и плагины с открытым исходным кодом лицензированы по лицензии AGPL 3.0. Пока вы соблюдаете лицензию и сохраняете информацию об авторских правах и версии NocoBase в интерфейсе, вы можете использовать его бесплатно.</p>
                 </div>
               </div>
             </div>
-            <!--Когда нужна коммерческая лицензия?-->
+
             <div class="accordion-item rounded mt-2">
               <h2 class="accordion-header" id="heading3">
                 <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                  Когда нужна коммерческая лицензия?
+                  Когда мне нужно приобрести коммерческую лицензию?
                 </button>
               </h2>
               <div id="collapse3" class="accordion-collapse border-0 collapse" aria-labelledby="heading3"
                    data-bs-parent="#accordionExample">
                 <div class="accordion-body text-muted">
-                  <p class="answer text-muted mb-0 pb-2">
-                    Коммерческая лицензия нужна, если:</p>
+                  <p class="answer text-muted mb-0 pb-2">Вам необходимо приобрести коммерческую лицензию, если у вас есть одно из следующих требований:</p>
                   <ul class="text-muted">
-                    <li>Вы изменили код NocoBase или разработали собственные плагины, но не хотите публиковать их под лицензией AGPL.</li>
-                    <li>Вы интегрируете NocoBase в свой продукт, но не хотите открывать исходный код своего продукта под лицензией AGPL.</li>
-                    <li>Вы хотите заменить информацию об авторских правах и версии NocoBase в футере или в правом верхнем углу на свой собственный бренд.</li>
-                    <li>Вам нужны расширенные функции безопасности, такие как динамическое управление доступом, аудит действий пользователей, автоматические резервные копии и другие функции доступные в коммерческой лицензии.</li>
-                    <li>Вам нужны расширенные возможности разработки и развёртывания, такие как поддержка нескольких приложений, изолированные окружения и распределённая архитектура (Kubernetes итд ).</li>
-                    <li>Вам требуется техническая поддержка от команды NocoBase.</li>
+                    <li>Вы изменили код NocoBase или расширили свои плагины, но не хотите публиковать эти результаты с открытым исходным кодом по лицензии AGPL.</li>
+                    <li>Вы интегрируете NocoBase в свой продукт, но не хотите публиковать свой продукт с открытым исходным кодом по лицензии AGPL.</li>
+                    <li>Вы хотите изменить информацию об авторских правах и версии NocoBase в нижнем колонтитуле или в правом верхнем углу системы на свой бренд.</li>
+                    <li>Вы хотите получить расширенные функции безопасности, такие как динамическое управление доступом, журналы аудита и автоматическое резервное копирование.</li>
+                    <li>Вы хотите получить расширенные возможности разработки и развёртывания, такие как мультиприложения, изоляция сред и распределённая архитектура.</li>
+                    <li>Вы хотите получить расширенную техническую поддержку от команды NocoBase.</li>
                   </ul>
                 </div>
               </div>
             </div>
-            <!--Нужно ли платить за плагины после покупки лицензии?-->
-            <div class="accordion-item rounded mt-2">
-              <h2 class="accordion-header" id="heading4">
-                <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                  Нужно ли платить за плагины после покупки лицензии?
-                </button>
-              </h2>
-              <div id="collapse4" class="accordion-collapse border-0 collapse" aria-labelledby="heading4"
-                   data-bs-parent="#accordionExample">
-                <div class="accordion-body text-muted">
-                  <p class="answer text-muted mb-0 pb-2">
-                    При покупке коммерческой лицензии вы сразу получаете набор плагин поинтов.
-                    Их хватит, чтобы закрыть основные потребности без дополнительных расходов.</p>
-                  <p class="answer text-muted mb-0 pb-2">Если поинты закончатся, дополнительные плагины можно:</p>
-                  <ul class="text-muted">
-                    <li>Купить нужные плагины поштучно</li>
-                    <li>Или выбрать <a href="https://www.nocobase.com/ru/plugins-bundles" target="_blank">пакет плагинов</a> со скидкой — это выгоднее, если нужно несколько штук сразу.</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!--Можно ли купить коммерческие плагины без покупки коммерческой лицензии?-->
-            <div class="accordion-item rounded mt-2">
-              <h2 class="accordion-header" id="heading4-2">
-                <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapse4-2" aria-expanded="false" aria-controls="collapse4-2">
-                  Можно ли купить коммерческие плагины без покупки коммерческой лицензии?
-                </button>
-              </h2>
-              <div id="collapse4-2" class="accordion-collapse border-0 collapse" aria-labelledby="heading4-2"
-                   data-bs-parent="#accordionExample">
-                <div class="accordion-body text-muted">
-                  <p class="answer text-muted mb-0 pb-2">
-                    Конечно. Коммерческие плагины и коммерческие лицензии являются независимыми друг от друга.
-                    Коммерческие плагины предоставляют расширенные возможности и могут быть установлены как на версию NocoBase с открытым исходным кодом,
-                    так и на коммерческую версию.</p>
-                  <p class="answer text-muted mb-0 pb-2">У вас есть несколько вариантов:</p>
-                  <ul class="text-muted">
-                    <li>Купить только нужные плагины для бесплатной версии.</li>
-                    <li>Приобрести лицензию и использовать поинты для получения плагинов.</li>
-                    <li>Купить лицензию и отдельно докупить дополнительные плагины при необходимости.</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+
             <div class="accordion-item rounded mt-2">
               <h2 class="accordion-header" id="heading6">
                 <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
@@ -688,35 +1532,15 @@ const keywords = page.keywords_ru || page.keywords;
               <div id="collapse6" class="accordion-collapse border-0 collapse" aria-labelledby="heading6"
                    data-bs-parent="#accordionExample">
                 <div class="accordion-body text-muted">
-                  <p class="answer text-muted mb-0">
-                    Стандартная редакция (Standard Edition) разрешено только для внутреннего использования в вашей компании.;
-                    Профессиональное и корпоративное издания (Professional и Enterprise Editions) позволяют разрабатывать приложения
-                    для ваших клиентов или продавать им готовые решения.</p>
+                  <p class="answer text-muted mb-0">Standard Edition ограничена только авторизованным внутренним использованием компанией; Professional и Enterprise Edition могут использоваться для разработки приложений для ваших клиентов или продажи разработанных приложений клиентам.</p>
                   <ul class="text-muted">
-                    <li>Если ваш продукт не даёт клиенту права на настройку (то есть клиент может только пользоваться готовым приложением без изменений), тогда коммерческая лицензия нужна только вам.</li>
-                    <li>Если же ваш продукт позволяет клиенту самостоятельно настраивать, изменять или развивать приложение через возможности no-code-конфигурации NocoBase, тогда вашему клиенту тоже потребуется приобрести коммерческую лицензию.</li>
+                    <li>Если продукт, который вы предоставляете клиенту, не предоставляет права настройки, и клиент может использовать разработанный вами продукт только в готовом виде, то только вам нужна коммерческая лицензия.</li>
+                    <li>Если продукт, который вы предоставляете клиенту, предоставляет права настройки, позволяя клиенту изменять и дальше развивать ваш продукт с помощью возможностей конфигурации без кода NocoBase, то вашему клиенту также необходимо приобрести коммерческую лицензию.</li>
                   </ul>
                 </div>
               </div>
             </div>
-            <!--Можно ли использовать коммерческие плагины для разных компаний?-->
-            <div class="accordion-item rounded mt-2">
-              <h2 class="accordion-header" id="heading7">
-                <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
-                  Можно ли использовать коммерческие плагины для разных компаний?
-                </button>
-              </h2>
-              <div id="collapse7" class="accordion-collapse border-0 collapse" aria-labelledby="heading7"
-                   data-bs-parent="#accordionExample">
-                <div class="accordion-body text-muted">
-                  <p class="answer text-muted mb-0">
-                    Коммерческие плагины привязаны к лицензии, и область их использования определяется типом лицензии.
-                    Если у вас есть лицензия Professional или Enterprise Edition, вы можете использовать приобретённые
-                    коммерческие плагины для разработки приложений для ваших клиентов.</p>
-                </div>
-              </div>
-            </div>
+
             <div class="accordion-item rounded mt-2">
               <h2 class="accordion-header" id="heading8">
                 <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
@@ -728,151 +1552,46 @@ const keywords = page.keywords_ru || page.keywords;
                    data-bs-parent="#accordionExample">
                 <div class="accordion-body text-muted">
                   <p class="answer text-muted mb-0">
-                    Вы можете перейти с более младшей редакции на более старшую редакцию, но не можете понизить редакцию обратно.
-                    При обновлении стоимость рассчитывается с учётом оставшегося срока действия права на обновления кратно месяцу, а количество поинтов для коммерческих плагинов
-                    также корректируется пропорционально оставшемуся времени.
-                    Например, если вы используете Standard Edition (Стандартная редакция) и у вас осталось 6 месяцев права на обновления, то переход на Professional Edition потребует доплату:
-                    700 000 - 70 000 × (6/12) = 665 000.
+                    Вы можете перейти с более низкой редакции на более высокую, но переход с более высокой на более низкую не поддерживается. При переходе на более высокую редакцию вам нужно заплатить только разницу в цене между редациями.<br/>
+                     Например, если вы используете Standard Edition (Стандартная редакция) и у вас осталось 6 месяцев права на обновления, то переход на Professional Edition потребует доплату: 700 000 - 70 000 × (6/12) = 665 000.
                 </div>
               </div>
             </div>
-            <!--Можно ли попробовать?-->
+
             <div class="accordion-item rounded mt-2">
               <h2 class="accordion-header" id="heading9">
                 <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
-                  Можно ли попробовать?
+                  Могу ли я попробовать?
                 </button>
               </h2>
               <div id="collapse9" class="accordion-collapse border-0 collapse" aria-labelledby="heading9"
                    data-bs-parent="#accordionExample">
                 <div class="accordion-body text-muted">
                   <p class="answer text-muted mb-0">
-                    Да, конечно! Вы можете развернуть пробный период на 14 дней в <a href="https://my.nocobase.ru" target="_blank">Мой NocoBase</a>  — вам будут доступны все коммерческие плагины NocoBase.<br>
-                    Если вам понадобится продлить срок тестирования, пожалуйста, свяжитесь с нами по адресу hello@nocobase.ru
+                    Да, конечно! Вы можете развернуть пробный период на 14 дней в <a href="https://my.nocobase.ru/" target="_blank">Мой NocoBase</a> — вам будут доступны все коммерческие плагины NocoBase.
+Если вам понадобится продлить срок тестирования, пожалуйста, свяжитесь с нами по адресу hello@nocobase.ru
                   </p>
                 </div>
               </div>
             </div>
-            <!--Есть ли у вас скидки?-->
-            <div class="accordion-item rounded mt-2">
-              <h2 class="accordion-header" id="heading10">
-                <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
-                  Есть ли у вас скидки?
-                </button>
-              </h2>
-              <div id="collapse10" class="accordion-collapse border-0 collapse" aria-labelledby="heading10"
-                   data-bs-parent="#accordionExample">
-                <div class="accordion-body text-muted">
-                  <p class="answer text-muted mb-0">
-                  У нас действуют стандартные скидки на покупку плагин-поинтов для всех пользователей. <br/>
-                  Для некоммерческих организаций мы конечно же предоставляем скидки на лицензии и плагины, напишите нам на почту hello@nocobase.ru и мы обсудим ваши условия.<br/>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!--Вы же против аренды и подписок?-->
-            <div class="accordion-item rounded mt-2">
-              <h2 class="accordion-header" id="heading11">
-                <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
-                  Вы же против аренды и подписок?
-                </button>
-              </h2>
-              <div id="collapse11" class="accordion-collapse border-0 collapse" aria-labelledby="heading11"
-                   data-bs-parent="#accordionExample">
-                <div class="accordion-body text-muted">
-                  <p class="answer text-muted mb-0">
-                  <p>Мы понимаем, что каждый бизнес уникален, особенно на старте своего пути. У небольших команд потребности в автоматизации могут меняться буквально каждый день.<p/>
-                  <p><span class="fw-bold">Мой NocoBase</span> — это новый продукт в экосистеме NocoBase, ориентированный в первую очередь на небольшие компании и стартапы, у которых ещё нет достаточных средств для покупки плагинов, версий Professional или Enterprise, но уже есть потребность в гибкой платформе для автоматизации бизнеса.</p>
-                  <p>Наша версия Мой NocoBase практически не отличается от самостоятельного размещения NocoBase Enterprise Edition на вашем сервере: она включает в себя почти все плагины, доступные в Enterprise-версии.</p>
-                  <p>В рамках поддержки малого бизнеса и стартапов мы предлагаем удобное решение в виде My NocoBase — без необходимости разворачивать инфраструктуру с нуля.</p>
-                </div>
-              </div>
-            </div>
-            <!--Что будет, если закончатся ресурсы??-->
-            <div class="accordion-item rounded mt-2">
-              <h2 class="accordion-header" id="heading12">
-                <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse11">
-                  Что будет, если закончатся ресурсы?
-                </button>
-              </h2>
-              <div id="collapse12" class="accordion-collapse border-0 collapse" aria-labelledby="heading12"
-                   data-bs-parent="#accordionExample">
-                <div class="accordion-body text-muted">
-                  <p class="answer text-muted mb-0">
-                  <p>Вы можете перейти на более высокий тариф в любой момент (понижение тарифа не предусмотрено).<p/>
-                  <p>Когда же у вас закончатся ресурсы* даже на максимальном тарифе, мы рекомендуем рассмотреть переезд на собственные вычислительные ресурсы.</p>
-                  <p>На практике для небольших команд ресурсов тех тарифов которые есть вполне достаточно для уверенного старта.</p>
-                  <p class="fst-italic">Ресурсы*: Тарифы Мой NocoBase различаются по выделенным ресурсам (как на виртуальной машине), процессор, память, место на диске</p>
-                </div>
-              </div>
-            </div>
-            <!--Могу ли я переехать с Мой NocoBase на собственный сервер?-->
-            <div class="accordion-item rounded mt-2">
-              <h2 class="accordion-header" id="heading13">
-                <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
-                  Могу ли я переехать с Мой NocoBase на собственный сервер?
-                </button>
-              </h2>
-              <div id="collapse13" class="accordion-collapse border-0 collapse" aria-labelledby="heading13"
-                   data-bs-parent="#accordionExample">
-                <div class="accordion-body text-muted">
-                  <p class="answer text-muted mb-0">
-                  <p>Да, безусловно! Так и задумано, когда потребности вашего бизнеса вырастут, мы хотим что бы вы получили 100% потенциала NocoBase, поэтому My NocoBase это только отправная точка в безграничные возможности NocoBase<p/>
-                  <p>Ваша новая инфраструктура должна соответствовать требованиям и спецификациям <span class="fw-bold"> исходной среды* </span> для успешной миграции.</p>
-                  <p>Рассчитать экономическую стоимость переезда или обсудить возможные сценарии перехода можно обратившись в нашу службу поддержки..</p>
-                  <p class="fst-italic"> <span class="fw-bold">Исходная среда: </span> если в процессе работы вы использовали коммерческие плагины или плагины версии Enterprise,
-                    то для успешной миграции необходимо будет приобрести плагины или лицензию Enterprise Edition отдельно и установить в своей инфраструктуре.
-                    Без этого восстановление резервной копии может оказаться невозможным.</p>
-                </div>
-              </div>
-            </div>
-            <!--Нужно ли покупать полную версию Enterprise при переезде?-->
-            <div class="accordion-item rounded mt-2">
-              <h2 class="accordion-header" id="heading14">
-                <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
-                  Нужно ли покупать полную версию Enterprise при переезде?
-                </button>
-              </h2>
-              <div id="collapse14" class="accordion-collapse border-0 collapse" aria-labelledby="heading14"
-                   data-bs-parent="#accordionExample">
-                <div class="accordion-body text-muted">
-                  <p class="answer text-muted mb-0">
-                  <p>Нет, это не обязательно. Но нам бы очень хотелось :))<p/>
-                  <p>Для успешной миграции вам нужно будет:</p>
-                  <ul class="text-muted">
-                    <li>Изучить текущую структуру проекта.</li>
-                    <li>Определить список используемых коммерческих плагинов.</li>
-                    <li>Выбрать только те плагины, которые действительно нужны.</li>
-                  </ul>
-                  <p>Если хотите сэкономить время — напишите нам, и мы поможем подобрать наиболее выгодный тариф и структуру лицензий для вашего проекта, а так же поможем с миграцией</p>
-                </div>
-              </div>
-            </div>
+
+
           </div>
         </div><!--end col-->
       </div><!--end row-->
     </div>
   </section>
   <!-- FAQ end -->
+
   <!-- Contact start -->
   <section class="section">
     <div class="container">
       <div class="row align-items-center text-center">
-        <h3>Как купить</h3>
-        <p class="para-desc text-center mx-auto text-muted">
-          Для вашего удобства вы можете совершить покупку лицензий или плагинов в личном кабинете,
-          вам нужно выбрать необходимый тип лицензии или набор плагинов оплатить любым удобным для вас способом
-          (Карты VISA\MC\МИР\СБП или банковским переводом по реквизитам)
-          Если у вас возникли вопросы, вы всегда можете написать нам на почту hello@nocobase.ru.
-        </p>
+        <h3>Как приобрести</h3>
+        <p class="para-desc text-center mx-auto text-muted">Пожалуйста, напишите нам по электронной почте, чтобы обсудить план с нашей основной командой. Затем войдите в коммерческую платформу сервиса для пользователей NocoBase, чтобы выбрать необходимые лицензии и плагины, сформировать заказ и завершить покупку.</p>
         <div class="mt-4 pt-2 text-center">
-          <a href="https://nocobase.com/ru/contact" class="btn btn-primary">Контакты <i class="uil uil-arrow-right"></i></a>
+          <a href="https://www.nocobase.com/ru/contact" class="btn btn-primary">Связаться с нами <i class="uil uil-arrow-right"></i></a>
         </div>
       </div>
     </div>
