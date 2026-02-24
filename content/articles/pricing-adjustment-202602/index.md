@@ -6,24 +6,27 @@ This transition provides a more business-friendly environment, offering users gr
 
 ### Open-Sourcing Major Commercial Plugins
 
-The following commercial plugins are now **open-source and free to use**:
+The following commercial plugins are now **open-source and free to use**
 
-* **AI LLM:** GigaChat
-* **Steps Form**
-* **Block:** Tree
-* **Comments**
-* **Custom Variables**
-* **Data Visualization:** ECharts (replaced by a new plugin in 2.0)
-* **Embed NocoBase**
-* **Field:** Code
-* **Form Drafts**
-* **Multi-keyword Filter**
-* **Workflow:** Custom Action Events,
-* **Workflow:** Date Calculation
-* **Workflow:** JavaScript Node
-* **Workflow:** Pre-action Events
-* **Workflow:** Variables
-* **Collection:** Connect Foreign Data Tables(FDW)
+
+| Plugin                                    | Package Name                                      | Notes                                         |
+| ----------------------------------------- | ------------------------------------------------- | --------------------------------------------- |
+| AI LLM: GigaChat                          | `@nocobase/plugin-ai-gigachat`                    |                                               |
+| Multi-step form                           | `@nocobase/plugin-block-multi-step-form`          | Available in Page V1, not yet adapted for 2.0 |
+| Block: Tree                               | `@nocobase/plugin-block-tree`                     | Available in Page V1, not yet adapted for 2.0 |
+| Comments                                  | `@nocobase/plugin-comments`                       |                                               |
+| Custom variables                          | `@nocobase/plugin-custom-variables`               | Available in Page V1, not yet adapted for 2.0 |
+| Data visualization: ECharts               | `@nocobase/plugin-data-visualization-echarts`     | Deprecated in 2.0, use Chart block instead    |
+| Embed NocoBase                            | `@nocobase/plugin-embed`                          | Available in Page V1, not yet adapted for 2.0 |
+| Field: Code                               | `@nocobase/plugin-field-code`                     | Not yet adapted for 2.0                       |
+| Form drafts                               | `@nocobase/plugin-form-drafts`                    | Supports Form block 2.0 only                  |
+| Multi-keyword filter                      | `@nocobase/plugin-multi-keyword-filter`           |                                               |
+| Workflow: Custom action trigger           | `@nocobase/plugin-workflow-custom-action-trigger` |                                               |
+| Workflow: Date calculation node           | `@nocobase/plugin-workflow-date-calculation`      |                                               |
+| Workflow: JavaScript node                 | `@nocobase/plugin-workflow-javascript`            |                                               |
+| Workflow: Request interceptor             | `@nocobase/plugin-workflow-request-interceptor`   |                                               |
+| Workflow: Variable                        | `@nocobase/plugin-workflow-variable`              |                                               |
+| Collection: Connect to foreign data (FDW) | `@nocobase/plugin-collection-fdw`                 |                                               |
 
 ### Consolidating Remaining Commercial Plugins
 
