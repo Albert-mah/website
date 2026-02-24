@@ -8,22 +8,25 @@ NocoBase 2.0 は 2026 年 2 月 15 日に正式にリリースされました。
 
 以下の商用プラグインは**オープンソース化され、無料で利用可能**になりました。
 
-* **AI LLM:** GigaChat
-* **Steps Form**
-* **Block:** Tree
-* **Comments**
-* **Custom Variables**
-* **Data Visualization:** ECharts（2.0 では新しいプラグインに置き換え）
-* **Embed NocoBase**
-* **Field:** Code
-* **Form Drafts**
-* **Multi-keyword Filter**
-* **Workflow:** Custom Action Events
-* **Workflow:** Date Calculation
-* **Workflow:** JavaScript Node
-* **Workflow:** Pre-action Events
-* **Workflow:** Variables
-* **Collection:** Connect Foreign Data Tables (FDW)
+
+| プラグイン                               | パッケージ名                                      | 備考                               |
+| ---------------------------------------- | ------------------------------------------------- | ---------------------------------- |
+| AI LLM: GigaChat                         | `@nocobase/plugin-ai-gigachat`                    |                                    |
+| マルチステップフォーム                   | `@nocobase/plugin-block-multi-step-form`          | Page V1 で利用可能、2.0 未対応     |
+| ブロック：ツリー                         | `@nocobase/plugin-block-tree`                     | Page V1 で利用可能、2.0 未対応     |
+| コメント                                 | `@nocobase/plugin-comments`                       |                                    |
+| カスタム変数                             | `@nocobase/plugin-custom-variables`               | Page V1 で利用可能、2.0 未対応     |
+| データ可視化：ECharts                    | `@nocobase/plugin-data-visualization-echarts`     | 2.0 で非推奨、Chart ブロックを使用 |
+| NocoBase 埋め込み                        | `@nocobase/plugin-embed`                          | Page V1 で利用可能、2.0 未対応     |
+| フィールド：コード                       | `@nocobase/plugin-field-code`                     | 2.0 未対応                         |
+| フォーム下書き                           | `@nocobase/plugin-form-drafts`                    | Form ブロック 2.0 のみ対応         |
+| 複数キーワードフィルター                 | `@nocobase/plugin-multi-keyword-filter`           |                                    |
+| ワークフロー：カスタムアクショントリガー | `@nocobase/plugin-workflow-custom-action-trigger` |                                    |
+| ワークフロー：日付計算ノード             | `@nocobase/plugin-workflow-date-calculation`      |                                    |
+| ワークフロー：JavaScript ノード          | `@nocobase/plugin-workflow-javascript`            |                                    |
+| ワークフロー：リクエストインターセプター | `@nocobase/plugin-workflow-request-interceptor`   |                                    |
+| ワークフロー：変数                       | `@nocobase/plugin-workflow-variable`              |                                    |
+| コレクション：外部データ接続 (FDW)       | `@nocobase/plugin-collection-fdw`                 |                                    |
 
 ### 残りの商用プラグインの商用ライセンスへの統合
 
