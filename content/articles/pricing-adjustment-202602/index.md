@@ -1,4 +1,8 @@
-NocoBase 2.0 was officially released on February 15, 2026. Starting with this version, NocoBase is pivoting toward being **AI-driven**, helping traditional enterprises implement AI capabilities and ensuring AI delivers real value in practical business scenarios. In line with this new direction, we have adjusted our pricing structure to be simpler and more cost-effective for our users.
+NocoBase 2.0 was officially released on February 15, 2026. Starting with this version, NocoBase is pivoting toward being AI-driven, helping traditional enterprises implement AI capabilities and ensuring AI delivers real value in practical business scenarios. In line with this new direction, we have adjusted our open-source license and pricing structure to ensure the license is more flexible and friendly, the pricing plan is simpler, and the cost of use is lower for our users.
+
+### License Change: From AGPL-3.0 to Apache-2.0
+
+This transition provides a more business-friendly environment, offering users greater flexibility for customization and commercial distribution with fewer constraints.
 
 ### Open-Sourcing Major Commercial Plugins
 
