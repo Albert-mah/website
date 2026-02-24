@@ -8,22 +8,25 @@ NocoBase 2.0 于 2026 年 2 月 15 日发布。从这个版本开始，NocoBase 
 
 以下商业插件均已开源，可以免费使用。
 
-* AI LLM: GigaChat
-* 分步表单
-* 区块：树
-* 评论
-* 自定义变量
-* 数据可视化：ECharts（在 2.0 中由新插件替代）
-* 嵌入 NocoBase
-* 字段：代码
-* 表单草稿
-* 多关键词筛选
-* 工作流：自定义操作事件
-* 工作流：日期计算节点
-* 工作流：JavaScript 节点
-* 工作流：操作前事件
-* 工作流：变量
-* 数据表：连接外部数据（FDW）
+
+| 插件                       | 包名                                              | 备注                          |
+| -------------------------- | ------------------------------------------------- | ----------------------------- |
+| AI LLM: GigaChat           | `@nocobase/plugin-ai-gigachat`                    |                               |
+| 多步骤表单                 | `@nocobase/plugin-block-multi-step-form`          | 适用于 Page V1，尚未适配 2.0  |
+| 区块：树                   | `@nocobase/plugin-block-tree`                     | 适用于 Page V1，尚未适配 2.0  |
+| 评论                       | `@nocobase/plugin-comments`                       |                               |
+| 自定义变量                 | `@nocobase/plugin-custom-variables`               | 适用于 Page V1，尚未适配 2.0  |
+| 数据可视化：ECharts        | `@nocobase/plugin-data-visualization-echarts`     | 2.0 已弃用，请使用 Chart 区块 |
+| 嵌入 NocoBase              | `@nocobase/plugin-embed`                          | 适用于 Page V1，尚未适配 2.0  |
+| 字段：代码                 | `@nocobase/plugin-field-code`                     | 尚未适配 2.0                  |
+| 表单草稿                   | `@nocobase/plugin-form-drafts`                    | 仅支持 Form 区块 2.0          |
+| 多关键词筛选               | `@nocobase/plugin-multi-keyword-filter`           |                               |
+| 工作流：自定义操作事件     | `@nocobase/plugin-workflow-custom-action-trigger` |                               |
+| 工作流：日期计算节点       | `@nocobase/plugin-workflow-date-calculation`      |                               |
+| 工作流：JavaScript 节点    | `@nocobase/plugin-workflow-javascript`            |                               |
+| 工作流：操作前事件         | `@nocobase/plugin-workflow-request-interceptor`   |                               |
+| 工作流：变量               | `@nocobase/plugin-workflow-variable`              |                               |
+| 数据表：连接外部数据 (FDW) | `@nocobase/plugin-collection-fdw`                 |                               |
 
 ### 将其余商业插件合并到商业许可证中
 
