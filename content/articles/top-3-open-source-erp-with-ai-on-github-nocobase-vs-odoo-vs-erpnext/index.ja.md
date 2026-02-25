@@ -1,5 +1,7 @@
 最近、[Reddit](https://www.reddit.com/r/Netsuite/comments/1picf8c/looking_for_an_erp/?share_id=O0FYumTWfVjppEHP5Xa8r&utm_content=2&utm_medium=android_app&utm_name=androidcss&utm_source=share&utm_term=1) であるユーザーが自社に適した ERP システムを探していました。同社はエンジニアリング設計および建設関連サービスを手がける小規模企業で、現在複数の ERP ソリューションを比較検討しています。
 
+![reddit.png](https://static-docs.nocobase.com/reddit-fuv775.png)
+
 中小規模のチームにとって、多くの ERP システムは一見すると高機能に見えます。しかし実際の導入段階では、システムが複雑すぎたり導入コストが高かったりするケースも多く、自社の業務構造に本当に合った製品を見極めることは容易ではありません。
 
 このユーザーが特に重視していたのは、プロジェクト型業務への対応可否、基本的な財務および購買プロセスをカバーできるか、さらに既存の業務ツールと連携できるかといった実務的なポイントでした。
@@ -35,9 +37,9 @@
 
 各 AI ERP の主な違いを素早く把握したい場合は、以下のまとめをご覧ください。
 
-## AI ERP プロジェクト概要
-
 ## NocoBase
+
+![NocoBase1.png](https://static-docs.nocobase.com/NocoBase1-o1ryqy.png)
 
 ### 基本情報
 
@@ -69,17 +71,25 @@ AI 従業員は NocoBase のデータモデルを基盤として、顧客、注�
 
 テキスト処理だけでなく、フィールドデータやステータス情報、権限ルールを踏まえて分析を行い、実際の業務状況に即した結果を生成します。
 
+![NocoBase2.png](https://static-docs.nocobase.com/NocoBase2-tsbxqb.png)
+
 #### データ処理とコンテンツ生成
 
 AI 従業員は構造化データおよび非構造化データを処理し、フォローアップ記録の作成、プロジェクト情報の整理、業務ドキュメントの自動生成などを行い、その結果を業務プロセスへ直接反映できます。
+
+![NocoBase3.png](https://static-docs.nocobase.com/NocoBase3-9g0i1l.png)
 
 #### 拡張可能な AI 従業員とナレッジベース構成
 
 プラグインベースのアーキテクチャにより、さまざまな大規模言語モデルを統合し、ナレッジベースや RAG 機能と組み合わせた専用 AI 従業員を構築できます。これにより AI は業務知識を継続的に学習し、ERP、CRM、社内システム全体においてデータ整理、分析、業務協働を支援しながら、拡張可能なインテリジェント業務運営を実現します。
 
+![NocoBase4.png](https://static-docs.nocobase.com/NocoBase4-jmf5r1.png)
+
 💡続きを読む: [コミュニティ事例: NocoBase で実運用可能な ERP を構築](https://www.nocobase.com/cn/blog/an-erp-built-with-nocobase)
 
 ## Odoo
+
+![Odoo1.png](https://static-docs.nocobase.com/Odoo1-li167z.png)
 
 ### 基本情報
 
@@ -107,11 +117,17 @@ Odoo は、販売、購買、在庫、財務管理までをカバーする一連
 
 Odoo が提供する Ask AI 機能は、メール、メモ、チャットなどの各モジュールにおいて文章の生成や編集を支援します。営業コミュニケーション、社内資料作成、マーケティングコンテンツ制作などの場面で活用され、日常業務の効率向上に貢献します。
 
+![Odoo2.png](https://static-docs.nocobase.com/Odoo2-867okw.png)
+
 #### API と外部 AI サービス連携
 
 Odoo Studio やカスタムモジュールを含む REST API と開発フレームワークを活用することで、外部の大規模言語モデルや AI サービスを統合できます。これにより高度なデータ分析や自動要約、業務支援機能を実現し、AI を営業・財務・運用プロセスへ直接組み込むことが可能になります。
 
+![Odoo3.png](https://static-docs.nocobase.com/Odoo3-6v7ebn.png)
+
 ## ERPNext
+
+![ERPNext1.png](https://static-docs.nocobase.com/ERPNext1-azwub7.png)
 
 ### 基本情報
 
@@ -139,15 +155,19 @@ ERPNext は、販売、購買、在庫、財務、プロジェクト管理とい
 
 ERPNext は Frappe Framework のオープン API と拡張可能なアーキテクチャにより、API やカスタムアプリケーションを通じて ChatGPT や Ollama などの外部大規模言語モデルと連携できます。これにより、ERPNext のデータや業務モジュールと AI サービスを接続し、柔軟な AI 活用を実現します。
 
+![ERPNext2.png](https://static-docs.nocobase.com/ERPNext2-m1cwst.png)
+
 #### 自然言語によるデータ検索とコンテンツ生成
 
 大規模言語モデルを統合することで、ERPNext は自然言語を使ったデータ検索や業務コンテンツの自動生成に対応します。例えば、自然言語による販売・在庫データ分析、レポート説明の生成、さらには販売・プロジェクト・購買プロセスにおけるフォローアップ記録、承認コメント、業務サマリーの自動作成などを支援します。
+
+![ERPNext3.png](https://static-docs.nocobase.com/ERPNext3-d8t3x4.png)
 
 ## よくある質問（FAQ）
 
 **Q1: 実用的な AI 機能を最も活用できるオープンソース ERP はどれですか？**
 
-** A: NocoBase。**AI 従業員モデルは従来のチャットボットを超え、以下のような対応が可能です：
+**A: NocoBase**。AI 従業員モデルは従来のチャットボットを超え、以下のような対応が可能です：
 
 * 顧客・注文・プロジェクトなどの業務コンテキストを理解
 * 権限管理のもとで承認ワークフローに参加
@@ -158,7 +178,7 @@ ERPNext は Frappe Framework のオープン API と拡張可能なアーキテ�
 
 **Q2: 製造業に最適なオープンソース ERP はどれですか？**
 
-** A: Odoo。**主な理由は以下の通りです：
+**A: Odoo** 主な理由は以下の通りです：
 
 * 製造・在庫・購買を網羅した充実したモジュール構成
 * 最大規模のコミュニティ（49.1k GitHub Stars）による高い導入実績
@@ -166,14 +186,14 @@ ERPNext は Frappe Framework のオープン API と拡張可能なアーキテ�
 
 **Q3: 長期的に最もコストを抑えられるオープンソース ERP はどれですか？**
 
-** A: NocoBase**（買い切りライセンス）または** ERPNext**（セルフホスト運用・無料）。
+**A: NocoBase**（買い切りライセンス）または** ERPNext**（セルフホスト運用・無料）。
 
 * 50 名規模チームの 5 年間想定コスト：NocoBase \$8,000 vs Odoo 約 \$150,000
 * ただし NocoBase は初期導入費用が必要です
 
 **Q4: 技術チームがない場合はどれを選ぶべきですか？**
 
-** A: Odoo**（統合 ERP を導入したい場合）または **NocoBase**（AI 活用を重視する場合）。
+**A: Odoo**（統合 ERP を導入したい場合）または **NocoBase**（AI 活用を重視する場合）。
 
 * **Odoo**：モジュール型設計で比較的習得しやすい
 * **NocoBase**：ローコード設定と AI 協働によりプログラミング不要
@@ -181,7 +201,7 @@ ERPNext は Frappe Framework のオープン API と拡張可能なアーキテ�
 
 **Q5: 最も活発なコミュニティを持つオープンソース ERP はどれですか？**
 
-** A: Odoo**（49.1k GitHub Stars）、次いで **ERPNext**（31.9k）、**NocoBase**（21.6k）。
+**A: Odoo**（49.1k GitHub Stars）、次いで **ERPNext**（31.9k）、**NocoBase**（21.6k）。
 
 コミュニティが活発であることは、以下を意味します：
 
@@ -191,7 +211,7 @@ ERPNext は Frappe Framework のオープン API と拡張可能なアーキテ�
 
 **Q6: NocoBase、Odoo、ERPNext の AI 統合方式の違いは何ですか？**
 
-** A:**
+**A:**
 
 * **NocoBase（AI 従業員モデル）**：AI が業務プロセスの一部として役割と権限を持ち、実際の操作を実行可能
 * **Odoo（Ask AI）**：AI は主にコンテンツ生成を支援する補助機能
@@ -199,7 +219,7 @@ ERPNext は Frappe Framework のオープン API と拡張可能なアーキテ�
 
 **Q7: プロジェクト型企業に適した ERP はどれですか？**
 
-** A: NocoBase。**主な理由は以下の通りです：
+**A: NocoBase** 主な理由は以下の通りです：
 
 * プロジェクト型管理をネイティブにサポート
 * AI がプロジェクト承認や協働プロセスに参加可能
@@ -236,3 +256,14 @@ AI 技術の急速な進化により、ERP システムはデータ分析、コ�
 企業は自社のデジタル化の進展度や業務の複雑さに応じて、最適なツールを選択できます。オープンソース ERP は今後も進化を続け、拡張性と統合性を備えた総合的な企業アプリケーション基盤へと発展していくでしょう。
 
 本記事が参考になった場合は、オープンソース ERP や AI 活用に関心のある方へぜひ共有してください。
+
+**関連読み物：**
+
+* [GitHubで人気の高いオープンソースAIプロジェクト管理ツール5選](https://www.nocobase.com/ja/blog/5-most-popular-open-source-ai-project-management-tools-on-github)
+* [注目のオープンソース AI 工单システム 6選](https://www.nocobase.com/ja/blog/6-best-open-source-ai-ticketing-systems)
+* [OSSデータ管理ツールを再考する：業務向け4選](https://www.nocobase.com/ja/blog/4-open-source-data-management-tools-for-business-systems)
+* [実例で見る ビジネスプロセス向け軽量エンタープライズソフトウェア 4 選](https://www.nocobase.com/ja/blog/4-lightweight-enterprise-software-for-business-processes)
+* [6つの企業向けソフトウェア：社内業務でExcelの代替となる製品 ](https://www.nocobase.com/ja/blog/6-enterprise-softwares-to-replace-excel-for-internal-operations)
+* [CRUD実装の重複を減らすためのオープンソースツール10選](https://www.nocobase.com/ja/blog/10-open-source-tools-developers-use-to-reduce-repetitive-crud)
+* [GitHub スター数が最も多いAIワークフロープロジェクトTop 12](https://www.nocobase.com/ja/blog/top-12-ai-workflows-projects-with-the-most-github-stars)
+* [ソフトウェア受託会社向けのオープンソース・ノーコード／ローコードツール6選](https://www.nocobase.com/ja/blog/6-open-source-no-code-low-code-tools-for-software-agencies)
