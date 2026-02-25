@@ -5717,7 +5717,7 @@
   },
   {
     "createdAt": "2026-02-16T14:33:35.907Z",
-    "updatedAt": "2026-02-16T14:33:35.907Z",
+    "updatedAt": "2026-02-25T09:29:06.018Z",
     "archived": null,
     "category_id": null,
     "coming": null,
@@ -5733,6 +5733,7 @@
     "id": 235,
     "internal": null,
     "is_free": null,
+    "license_included_new": "enterprise",
     "name": "App supervisor",
     "name_cn": "应用监管器",
     "name_jp": "App supervisor",
