@@ -1,6 +1,6 @@
 最近在 [Reddit](https://www.reddit.com/r/Netsuite/comments/1picf8c/looking_for_an_erp/?share_id=O0FYumTWfVjppEHP5Xa8r&utm_content=2&utm_medium=android_app&utm_name=androidcss&utm_source=share&utm_term=1) 里，有一位用户正在为自己的公司寻找合适的 ERP 系统。他们是一家从事工程设计与建筑相关业务的小型企业，目前正在评估不同 ERP 方案。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NjczYTVjNDI4NTgzMWU4YmEyMThiNThhZjI5MWQwOGZfR2ZrR3p6RXpHNm83Q0tIbFRSbzIxM2pzSkpwdkhzWlpfVG9rZW46QWx3WGJPS2tJb1QzV0p4S1RBUWNVWlVjbjZnXzE3NzIwMzY3Nzg6MTc3MjA0MDM3OF9WNA)
+![reddit.png](https://static-docs.nocobase.com/reddit-fuv775.png)
 
 对于中小型团队来说，很多 ERP 系统看起来功能全面，但真正落地时却发现要么过于复杂，要么实施成本过高，很难判断哪一款真正匹配自身业务结构。
 
@@ -25,11 +25,9 @@
 | Odoo     | 完整模块化 ERP  | 内置 AI 助手 + Agent    | 中小及成长型企业      | 标准化企业管理、制造、电商         |
 | ERPNext  | 开源 ERP 套件   | API 集成 AI / LLM 扩展  | 开发能力较强团队      | 自托管 ERP、定制业务管理           |
 
-## AI ERP 项目介绍
-
 ## NocoBase
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YzZmNTk2ZjIyOWZjMjA1OTVkYzA0NDk2MjIzMjU5NDdfZkJJZ29GUTJRblRnQkpVQ1NiSEN0VkFtcjdESnFGT05fVG9rZW46SUFMcmJFWVNib0pGUEx4WEJJaWMzVWlDblhkXzE3NzIwMzY3Nzg6MTc3MjA0MDM3OF9WNA)
+![NocoBase1.png](https://static-docs.nocobase.com/NocoBase1-o1ryqy.png)
 
 ### 基本信息
 
@@ -61,25 +59,25 @@ AI 员工能够基于 NocoBase 的数据模型理解业务上下文，例如客�
 
 AI 不仅处理文本信息，还可以结合字段数据、状态信息及权限规则进行分析，从而生成符合真实业务场景的判断与输出结果。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=MGFlNGMzMDM1OTZiNDgyNjMxNWZmYzkzZDNiZDMyNzBfOHc0aTY0c25kRFdOcnVBc3IzV1haZFJOZjhpSDQ3S3BfVG9rZW46UHFnUmJDTzRtb0JWbUd4VlVURGNGellpbm1mXzE3NzIwMzY3Nzg6MTc3MjA0MDM3OF9WNA)
+![NocoBase2.png](https://static-docs.nocobase.com/NocoBase2-tsbxqb.png)
 
 #### 数据处理与内容生成
 
 AI 员工可以对系统中的结构化与非结构化数据进行处理，并将结果直接写入业务系统，例如自动生成跟进记录、整理项目数据或生成业务文档内容。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=N2JiMTE2NzM1OTE4YmQzYmQzYTgwZDE3N2Y4MDQ4MGFfZURoMlQwNzFTbkpZTXhMSk5rRHN1UFFXMlVMRUpVSjhfVG9rZW46VkNJZGJEQXlLb3JNSFh4RU4xU2NGcHQzblpjXzE3NzIwMzY3Nzg6MTc3MjA0MDM3OF9WNA)
+![NocoBase3.png](https://static-docs.nocobase.com/NocoBase3-9g0i1l.png)
 
 #### 可扩展的 AI 员工与知识库体系
 
 通过插件化架构，企业可以接入不同大模型服务，并结合知识库与 RAG 能力构建专属 AI 员工。AI 可以持续学习业务知识，在 ERP、CRM 或内部系统中承担数据整理、分析与协作支持等角色，实现可扩展的智能业务协作。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZTkzNmJjNGQ4N2Q0N2ZlZmZhMDRlYTVlNTRiMjA0NGNfZVhGY29WUnNnRWo4eUY4QWwzanJFVzN4TGplYXRFdXdfVG9rZW46U0pxN2JPUWtLb2hmQnR4bFBVYWNOUGdHbkZiXzE3NzIwMzY3Nzg6MTc3MjA0MDM3OF9WNA)
+![NocoBase4.png](https://static-docs.nocobase.com/NocoBase4-jmf5r1.png)
 
 💡阅读更多：[社区用户分享：用 NocoBase 搭建可落地的 ERP - NocoBase](https://www.nocobase.com/cn/blog/an-erp-built-with-nocobase)
 
 ## Odoo
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=ZjUzNDJiMDNmZmVhZDc2MjNkYzU2OWUzMzgzMzQzYjRfQm5QdEtlQzlaTmk1RnJxMTM5VWpQU2hON0h3Rkx1U3hfVG9rZW46VFY3TmJXNTBnb083M2x4bTAwVmNOWVNXbnFnXzE3NzIwMzY3Nzg6MTc3MjA0MDM3OF9WNA)
+![Odoo1.png](https://static-docs.nocobase.com/Odoo1-li167z.png)
 
 ### 基本信息
 
@@ -107,17 +105,17 @@ Odoo 支持覆盖销售、采购、库存及财务管理等完整业务流程。
 
 Odoo 官方已发布 Ask AI 功能，可在邮件、备注、聊天等模块中协助生成与优化文本内容。该功能用于销售沟通、内部说明、市场内容撰写等场景，提升日常业务处理效率。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YzU1YjU3YjczZDBkZTQxMjQ5Y2Y0OTFjMTUzY2ViMGVfREkwbWowWktReWc1S2ZRVFZadllJbG9wRkhBdXRzZnRfVG9rZW46SlhjemJLZFpyb2lQMHN4ZlpJbmN2VjN0bldmXzE3NzIwMzY3Nzg6MTc3MjA0MDM3OF9WNA)
+![Odoo2.png](https://static-docs.nocobase.com/Odoo2-867okw.png)
 
 #### API 与外部 AI 服务集成能力
 
 基于 Odoo 提供的 REST API 与开发框架（Odoo Studio / 自定义模块机制），企业可集成外部大模型或 AI 服务，实现更高级的数据分析、自动摘要或业务建议能力。官方支持模块化扩展与第三方集成，使 AI 能力可通过自定义开发嵌入到销售、财务或运营流程中。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=YWQ4YjJkNzUyOTIwZWI2MjVlY2I4NzBiOTAzYzNlNTZfSWhQZlBWR2IwbEFVMWYwRDZKa0dJU01nSXB4ZVJRakpfVG9rZW46RDBIRmJXbWxmbzAzdGd4NncwWGNkNGRPbk9mXzE3NzIwMzY3Nzg6MTc3MjA0MDM3OF9WNA)
+![Odoo3.png](https://static-docs.nocobase.com/Odoo3-6v7ebn.png)
 
 ## ERPNext
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=OWRjMWNiNDM3OTA0NzYzZGZjM2RkYzFiZjExMjE1MTdfZWcybmdmdTdqM3BzY3hTU0h6V1cxZ3ZFRXNScDNrRGhfVG9rZW46VkJFY2JCa254b3hHOGF4a0FJZ2N6d2N2bkNnXzE3NzIwMzY3Nzg6MTc3MjA0MDM3OF9WNA)
+![ERPNext1.png](https://static-docs.nocobase.com/ERPNext1-azwub7.png)
 
 ### 基本信息
 
@@ -145,19 +143,19 @@ ERPNext 支持覆盖销售、采购、库存、财务及项目管理等典型企
 
 ERPNext 基于 Frappe Framework 提供开放 API 与可扩展架构，支持通过 API 或自定义应用接入第三方大模型服务，例如 ChatGPT 或本地 LLM（如 Ollama）。开发者可以将外部 AI 服务与 ERPNext 数据及业务模块连接，使系统具备接入不同模型服务的能力。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=M2Q3OTU5YTkxOTI3MjI2Y2Q3ZjdlOTY3YzI2MmFhYmVfeXdGbDgwZXloaTFKd0pOMjFsd0hacFZZbWl2TEUybmlfVG9rZW46QnVnZmJpa2RFb2VaZW14Vk9FSmNST0NvbkZiXzE3NzIwMzY3Nzg6MTc3MjA0MDM3OF9WNA)
+![ERPNext2.png](https://static-docs.nocobase.com/ERPNext2-m1cwst.png)
 
 #### 自然语言查询与业务内容生成能力
 
 在完成大模型集成后，ERPNext 可实现基于自然语言的数据查询与业务内容生成。例如通过自然语言分析销售或库存数据、生成业务报表说明，或在销售、项目及采购场景中自动生成跟进记录、审批说明与业务摘要，从而在实际业务流程中提供辅助支持。
 
-![](https://nocobase.feishu.cn/space/api/box/stream/download/asynccode/?code=NzgyOGMzYjI2YjBlZTI2ZTNhYjk5NmMxZjA5NjBhYjRfMVZnM21FMGVCR09XWUVVVlA0bnJDQ25CbjRDNUxjcjRfVG9rZW46SmZuQmJEd0o4b1RDMnd4R3VZZWNhYWI3bmNoXzE3NzIwMzY3Nzg6MTc3MjA0MDM3OF9WNA)
+![ERPNext3.png](https://static-docs.nocobase.com/ERPNext3-d8t3x4.png)
 
 ## 常见问题 (FAQ)
 
 **Q1: 哪款开源 ERP 的 AI 功能最好用?**
 
-**A:****NocoBase**。它的 AI 员工模式不是简单的对话机器人，而是可以:
+**A: NocoBase**。它的 AI 员工模式不是简单的对话机器人，而是可以:
 
 * 理解业务上下文 (客户、订单、项目)
 * 在权限控制下参与审批流程
@@ -168,7 +166,7 @@ Odoo 和 ERPNext 的 AI 功能更多是辅助工具，需要额外开发才能�
 
 **Q2: 哪款开源 ERP 最适合制造业?**
 
-**A:****Odoo**。原因:
+**A: Odoo**。原因:
 
 * 完整的制造、库存、采购模块
 * 社区最大 (49.1k Stars)，行业适配成熟
@@ -176,14 +174,14 @@ Odoo 和 ERPNext 的 AI 功能更多是辅助工具，需要额外开发才能�
 
 **Q3: 哪款开源 ERP 的长期成本最低?**
 
-**A:****NocoBase** (一次性买断) 或 **ERPNext 自托管** (免费开源)。
+**A: NocoBase** (一次性买断) 或 **ERPNext 自托管** (免费开源)。
 
 * 50 人团队 5 年成本: NocoBase \$8,000 vs Odoo \~\$150,000
 * 但 NocoBase 需要前期一次性投入
 
 **Q4: 我没有技术团队，应该选哪个?**
 
-**A:****Odoo** (如果需要完整 ERP) 或 **NocoBase** (如果需要 AI 集成)。
+**A: Odoo** (如果需要完整 ERP) 或 **NocoBase** (如果需要 AI 集成)。
 
 * Odoo: 模块化设计，学习曲线较低
 * NocoBase: 低代码和 AI 协作配置，无需编程
@@ -191,7 +189,7 @@ Odoo 和 ERPNext 的 AI 功能更多是辅助工具，需要额外开发才能�
 
 **Q5: 哪款开源 ERP 的社区最活跃?**
 
-**A:****Odoo** (49.1k GitHub Stars)。
+**A: Odoo** (49.1k GitHub Stars)。
 
 其次是 ERPNext (31.9k) 和 NocoBase (21.6k)。
 
@@ -211,7 +209,7 @@ Odoo 和 ERPNext 的 AI 功能更多是辅助工具，需要额外开发才能�
 
 **Q7: 项目型企业应该选择哪款 ERP?**
 
-**A:****NocoBase**。原因:
+**A: NocoBase**。原因:
 
 * 原生支持项目型业务管理
 * AI 可参与项目审批和协作
@@ -248,3 +246,14 @@ AI 技术的快速发展，正在为 ERP 系统在数据分析、内容生成与
 企业可以结合自身数字化阶段与业务复杂度，选择更匹配的工具。我们相信，未来的开源 ERP 会持续向更成熟、更加体系化的方向发展，逐步升级为可扩展、可集成的综合企业应用平台。
 
 如果你觉得这篇内容对你有帮助，欢迎分享给更多关注开源 ERP 与 AI 发展的朋友。
+
+相关阅读：
+
+* [5 个 GitHub 上最受欢迎的开源 AI 项目管理工具](https://www.nocobase.com/cn/blog/5-most-popular-open-source-ai-project-management-tools-on-github)
+* [6 个值得关注的开源 AI 工单系统 ](https://www.nocobase.com/cn/blog/6-best-open-source-ai-ticketing-systems)
+* [4 个值得关注的开源业务数据管理工具 ](https://www.nocobase.com/cn/blog/4-open-source-data-management-tools-for-business-systems)
+* [4个适合企业业务流程的轻量化软件（附真实案例）](https://www.nocobase.com/cn/blog/4-lightweight-enterprise-software-for-business-processes)
+* [6 个替代 Excel 的企业内部管理软件](https://www.nocobase.com/cn/blog/6-enterprise-softwares-to-replace-excel-for-internal-operations)
+* [开发者收藏！10 个减少重复 CRUD 的开源工具](https://www.nocobase.com/cn/blog/10-open-source-tools-developers-use-to-reduce-repetitive-crud)
+* [GitHub Star 数量前 12 的 AI 工作流项目](https://www.nocobase.com/cn/blog/top-12-ai-workflows-projects-with-the-most-github-stars)
+* [最适合外包交付的 6 个开源无代码与低代码](https://www.nocobase.com/cn/blog/6-open-source-no-code-low-code-tools-for-software-agencies)
