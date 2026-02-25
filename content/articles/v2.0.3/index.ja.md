@@ -41,7 +41,6 @@
   - ワークフローキャンバス上でノードのコピー＆ペーストと、ドラッグによるノード位置移動をサポートしました ([#8559](https://github.com/nocobase/nocobase/pull/8559)) by @mytharcher
   - ノード移動用の API を追加しました ([#8507](https://github.com/nocobase/nocobase/pull/8507)) by @mytharcher
   - 「多条件分岐」ノードを追加し、`switch` / `case` に似た制御フローを提供します ([#7878](https://github.com/nocobase/nocobase/pull/7878)) by @mytharcher
-    参考文档：[“多条件分支”节点](https://v2.docs.nocobase.com/cn/workflow/nodes/multi-conditions)
 - **[AI従業員]**
 
   - AI 会話がファイルのコピー＆ペーストをサポートしました ([#8487](https://github.com/nocobase/nocobase/pull/8487)) by @heziqiang
@@ -232,63 +231,189 @@
   - カスタムアクションワークフロー実行時に、パラメータ／ペイロードが不正になる問題を修正しました by @mytharcher
   - コメント以外のテーブルでコメントブロックを使うと「現在のテーブルはコメントテーブルではないため、コメントブロックを使用できません」と表示するようにしました by @katherinehhh
   - コメントブロックでレコード削除に失敗する問題を修正しました by @katherinehhh
-  - コメントブロックでコメント引用が効かない問題を修正しました by @katherinehhh
-- **[client]**
+  - コメントブロックでコメント引用が効かない問題を修正しました by @katherinehhh**[flow-engine]**
 
-  - モバイル端末でのページネーション挙動を、テーブルとグリッドカードで統一しました ([#8691](https://github.com/nocobase/nocobase/pull/8691)) by @zhangzhonghe
-  - チャートブロックのフィルターが効かない問題を修正しました ([#8671](https://github.com/nocobase/nocobase/pull/8671)) by @chenos
-  - to-many の関連フィールドに単一レコードを割り当てた際の不整合を修正しました ([#8652](https://github.com/nocobase/nocobase/pull/8652)) by @gchust
-  - 数式フィールドの表示設定（数値フォーマット／日付フォーマット）が出ない問題を修正しました ([#8625](https://github.com/nocobase/nocobase/pull/8625)) by @katherinehhh
-  - フォーム先頭項目の上罫線が欠ける問題を修正しました ([#8623](https://github.com/nocobase/nocobase/pull/8623)) by @katherinehhh
-  - 外部キーをタイトルフィールドに指定した場合にドロップダウン表示が崩れる問題を修正しました ([#8619](https://github.com/nocobase/nocobase/pull/8619)) by @katherinehhh
-  - 選択済データを変更後に戻せない問題を修正しました ([#8610](https://github.com/nocobase/nocobase/pull/8610)) by @katherinehhh
-  - run 実行後に列が更新されない問題を修正しました ([#8608](https://github.com/nocobase/nocobase/pull/8608)) by @gchust
-  - 非設定モードで "read hidden" のレンダリングエラーが起きる可能性を修正しました ([#8591](https://github.com/nocobase/nocobase/pull/8591)) by @gchust
-  - 子テーブル（行内編集）を読み取り専用にした後、閲覧モードへ切り替えると編集用列が残る問題を修正しました ([#8589](https://github.com/nocobase/nocobase/pull/8589)) by @katherinehhh
-  - Grid レイアウトの占位が残る問題を修正しました ([#8535](https://github.com/nocobase/nocobase/pull/8535)) by @zhangzhonghe
-  - 列幅変更が反映されない／入力欄が列幅に追従しない問題を修正しました ([#8573](https://github.com/nocobase/nocobase/pull/8573)) by @katherinehhh
-  - ツリーテーブル有効化後、更新しないと「子レコード追加」アクションを追加できない問題を修正しました ([#8574](https://github.com/nocobase/nocobase/pull/8574)) by @katherinehhh
-  - クイック追加でフォーム内データが上書きされる問題を修正しました ([#8567](https://github.com/nocobase/nocobase/pull/8567)) by @gchust
-  - ツリーではないテーブルで「ツリーテーブルを有効化」「デフォルトで全行展開」を非表示にしました ([#8566](https://github.com/nocobase/nocobase/pull/8566)) by @katherinehhh
-  - アクション追加モーダルにテーブル（追加）が出る問題を修正しました ([#8562](https://github.com/nocobase/nocobase/pull/8562)) by @gchust
-  - モーダルを閉じた後にページデータが誤更新される問題を修正しました ([#8548](https://github.com/nocobase/nocobase/pull/8548)) by @gchust
-  - モーダルを跨ぐ更新が効かない問題を修正しました ([#8541](https://github.com/nocobase/nocobase/pull/8541)) by @gchust
-  - 複数行テキストが改行されない問題を修正しました ([#8122](https://github.com/nocobase/nocobase/pull/8122)) by @katherinehhh
-  - 「任意の 1 つを含む／含まない」でオプションが全件出ない問題を修正しました ([#8118](https://github.com/nocobase/nocobase/pull/8118)) by @gchust
-  - ネストした子テーブルでデータが表示されない問題を修正しました ([#8117](https://github.com/nocobase/nocobase/pull/8117)) by @katherinehhh
-  - 「時間の間」フィルターで値を消して再実行するとエラーになる問題を修正しました ([#8110](https://github.com/nocobase/nocobase/pull/8110)) by @gchust
-  - フィルターフォームの関連フィールド候補データが誤る問題を修正しました ([#8109](https://github.com/nocobase/nocobase/pull/8109)) by @gchust
-  - カスタムフィールド設定が反映されない／一部設定が効かない問題を修正しました ([#8106](https://github.com/nocobase/nocobase/pull/8106)) by @gchust
-  - Checkbox フィールドのフィルターが効かない問題を修正しました ([#8103](https://github.com/nocobase/nocobase/pull/8103)) by @gchust
-  - number フィールド値が反映されない問題を修正しました ([#8104](https://github.com/nocobase/nocobase/pull/8104)) by @gchust
-  - 一部演算子で正しくフィルターできない問題を修正しました ([#8100](https://github.com/nocobase/nocobase/pull/8100)) by @gchust
-  - ブロック削除後にフィルター側の設定が残る問題を修正しました ([#8098](https://github.com/nocobase/nocobase/pull/8098)) by @gchust
-  - ボタン非表示後に余白が残る問題を修正しました ([#8092](https://github.com/nocobase/nocobase/pull/8092)) by @katherinehhh
-  - リセットボタン文言を変更できない問題を修正しました ([#8089](https://github.com/nocobase/nocobase/pull/8089)) by @gchust
-  - $in / $notIn で複数値入力できない問題を修正しました ([#8081](https://github.com/nocobase/nocobase/pull/8081)) by @gchust
-  - ブロック追加後にフィルターのフィールドメニューへ自動表示されない問題を修正しました ([#8085](https://github.com/nocobase/nocobase/pull/8085)) by @gchust
-  - 設定メニューにクイック作成が出る問題を修正しました ([#8083](https://github.com/nocobase/nocobase/pull/8083)) by @gchust
-  - リストブロックの関連子テーブルデータが誤る問題を修正しました ([#8082](https://github.com/nocobase/nocobase/pull/8082)) by @katherinehhh
-  - 数値フィールドの検証ルールがフォームで効かない問題を修正しました ([#8025](https://github.com/nocobase/nocobase/pull/8025)) by @katherinehhh
-  - バックエンド検証ルールがフィルターフォームに影響する問題を修正しました ([#8074](https://github.com/nocobase/nocobase/pull/8074)) by @gchust
-  - 大フィールド編集の表示が崩れる問題を修正しました ([#8069](https://github.com/nocobase/nocobase/pull/8069)) by @katherinehhh
-  - to-many ドロップダウンで複数選択オフ時にクイック追加がエラーになる問題を修正しました ([#8034](https://github.com/nocobase/nocobase/pull/8034)) by @katherinehhh
-  - json のクイック編集がエラーになる問題を修正しました ([#8059](https://github.com/nocobase/nocobase/pull/8059)) by @katherinehhh
-  - json 送信時はオブジェクトとして扱うようにしました ([#8057](https://github.com/nocobase/nocobase/pull/8057)) by @katherinehhh
-  - Enter でフィルターを実行できない問題を修正しました ([#8056](https://github.com/nocobase/nocobase/pull/8056)) by @gchust
-  - 複数選択オフで N/A 表示になる問題を修正しました ([#8050](https://github.com/nocobase/nocobase/pull/8050)) by @katherinehhh
-  - データセレクターの一括削除が失敗する問題を修正しました ([#8023](https://github.com/nocobase/nocobase/pull/8023)) by @katherinehhh
-  - コメントブロック追加時に現在レコードメニューが出る問題を修正しました ([#8039](https://github.com/nocobase/nocobase/pull/8039)) by @gchust
-  - 日付→時間フィールド切替でレンダリングエラーになる問題を修正しました ([#8036](https://github.com/nocobase/nocobase/pull/8036)) by @gchust
-  - 追加／編集モーダルのデフォルトタイトルが誤る問題を修正しました ([#8033](https://github.com/nocobase/nocobase/pull/8033)) by @gchust
-  - 詳細ブロックの JS field スタイルが誤る問題を修正しました ([#8031](https://github.com/nocobase/nocobase/pull/8031)) by @gchust
-  - 子テーブルの列幅設定が効かない問題を修正しました ([#8027](https://github.com/nocobase/nocobase/pull/8027)) by @katherinehhh
-  - 子テーブルの列ドラッグが効かない問題を修正しました ([#8026](https://github.com/nocobase/nocobase/pull/8026)) by @katherinehhh
-  - antd の翻訳が効かない問題を修正しました ([#7621](https://github.com/nocobase/nocobase/pull/7621)) by @zhangzhonghe
-  - 引用ブロックで現在ビューの変数を取得できない問題を修正しました ([#7620](https://github.com/nocobase/nocobase/pull/7620)) by @gchust
-- **[flow-engine]**
+  **[client]**
 
-  - フィルターフィールド子メニューに検索文字があると展開できない問題を修正しました ([#8604](https://github.com/nocobase/nocobase/pull/8604)) by @gchust
+  * テーブルとグリッドカードのモバイル端末でのページネーション挙動を統一 ([#8691](https://github.com/nocobase/nocobase/pull/8691)) by @zhangzhonghe
+  * チャートブロックのフィルタが無効になる問題を修復 ([#8671](https://github.com/nocobase/nocobase/pull/8671)) by @chenos
+  * リレーションフィールドに値を設定する際、多対多のリレーションフィールドに単一レコードを設定すると不正確になる問題を修復。 ([#8652](https://github.com/nocobase/nocobase/pull/8652)) by @gchust
+  * 日付ピッカーを使用して日付を解析し、パスワード強度検証などを追加 ([#8647](https://github.com/nocobase/nocobase/pull/8647)) by @jiannx
+  * テーブル操作列で連動してボタンを非表示にした後に隙間が発生する問題を修復 ([#8646](https://github.com/nocobase/nocobase/pull/8646)) by @zhangzhonghe
+  * `Action.Modal`（操作モーダル）が一部のインタラクション後に閉じられない問題を修復 ([#8642](https://github.com/nocobase/nocobase/pull/8642)) by @mytharcher
+  * markdown item が不正な Liquid をレンダリングする際に例外を正しく処理できない問題を修復 ([#8637](https://github.com/nocobase/nocobase/pull/8637)) by @katherinehhh
+  * フォーム内の多対多フィールド属性が常にバックエンド解析リクエストを送信する問題を修復。 ([#8636](https://github.com/nocobase/nocobase/pull/8636)) by @gchust
+  * 数式フィールドの数値型で数値フォーマットが表示されず、日付型で日付フォーマット設定項目が表示されない問題を修復 ([#8625](https://github.com/nocobase/nocobase/pull/8625)) by @katherinehhh
+  * フォームの最初の項目の上部ボーダーが完全に表示されない問題を修復 ([#8623](https://github.com/nocobase/nocobase/pull/8623)) by @katherinehhh
+  * フォームのリレーションフィールドコンポーネントで、タイトルフィールドに外部キーを使用した場合にドロップダウンリストのデータ表示が異常になる問題を修復 ([#8619](https://github.com/nocobase/nocobase/pull/8619)) by @katherinehhh
+  * 編集フォームのリレーションフィールドデータセレクターで選択済みデータを変更後に復元できない問題を修復 ([#8610](https://github.com/nocobase/nocobase/pull/8610)) by @katherinehhh
+  * JS column のコードエディタで run ボタンをクリック後にテーブル列が再描画されない問題を修復。 ([#8608](https://github.com/nocobase/nocobase/pull/8608)) by @gchust
+  * 非設定モード時に "read hidden" のレンダリングエラーが発生する可能性がある問題を修復。 ([#8591](https://github.com/nocobase/nocobase/pull/8591)) by @gchust
+  * 編集フォーム内のサブテーブル（行内編集）を読み取り専用に設定後、閲覧モードに切り替えた際にも編集列フィールドが残る問題を修復 ([#8589](https://github.com/nocobase/nocobase/pull/8589)) by @katherinehhh
+  * Grid レイアウトにプレースホルダーが存在する問題を修復 ([#8535](https://github.com/nocobase/nocobase/pull/8535)) by @zhangzhonghe
+  * サブテーブルの行内編集時、列幅を縮小してもリアルタイム更新されず、複数行テキストフィールドで列幅拡大後も入力欄が列幅に自動適応しない問題を修復 ([#8573](https://github.com/nocobase/nocobase/pull/8573)) by @katherinehhh
+  * ツリーテーブルを有効化後、ページをリフレッシュしないと「子レコードを追加」操作を追加できない問題を修復 ([#8574](https://github.com/nocobase/nocobase/pull/8574)) by @katherinehhh
+  * 編集フォームでリレーションフィールドセレクターのクイック追加ボタンからデータを追加するとフォーム内データが上書きされる問題を修復。 ([#8567](https://github.com/nocobase/nocobase/pull/8567)) by @gchust
+  * 非ツリー構造テーブルでテーブルブロック属性の「ツリーテーブルを有効化」と「すべての行をデフォルトで展開」を非表示 ([#8566](https://github.com/nocobase/nocobase/pull/8566)) by @katherinehhh
+  * 追加操作モーダルにテーブル（追加）メニューが表示されるべきでない問題を修復。 ([#8562](https://github.com/nocobase/nocobase/pull/8562)) by @gchust
+  * 初回モーダルを開いて閉じた後にページデータが誤って再読み込みされる問題を修復。 ([#8548](https://github.com/nocobase/nocobase/pull/8548)) by @gchust
+  * イベントフローがモーダル間のターゲットブロックを更新する際に反映されない問題を修復。 ([#8541](https://github.com/nocobase/nocobase/pull/8541)) by @gchust
+  * nanoid フィールドが新規フォーム送信後にデフォルト値を再生成しない問題を修復 ([#8538](https://github.com/nocobase/nocobase/pull/8538)) by @katherinehhh
+  * カスケードコンポーネントでデフォルト値設定時にデータ表示が異常になる問題を修復 ([#8537](https://github.com/nocobase/nocobase/pull/8537)) by @katherinehhh
+  * フォーム送信後にデータブロックが重複して再読み込みされる問題を修復。 ([#8531](https://github.com/nocobase/nocobase/pull/8531)) by @gchust
+  * フィルタ関連の既知の問題を修復 ([#8514](https://github.com/nocobase/nocobase/pull/8514)) by @zhangzhonghe
+  * 多階層の多対多フィールドのサブフォームで連動ルールがフォーム変数による代入を使用できない問題を修復。 ([#8518](https://github.com/nocobase/nocobase/pull/8518)) by @gchust
+  * 多段モーダルおよびブロック間データ変更後にリフレッシュされない問題を修復。 ([#8471](https://github.com/nocobase/nocobase/pull/8471)) by @gchust
+  * フィルタブロックで日時フィールドに時間を含む場合に時間フォーマットが重複する問題を修復 ([#8506](https://github.com/nocobase/nocobase/pull/8506)) by @zhangzhonghe
+  * フィルタブロックで日時フィールドに時間を含む場合に時間フォーマットが重複する問題を修復 ([#8484](https://github.com/nocobase/nocobase/pull/8484)) by @zhangzhonghe
+  * リッチテキストエディタのポップアップが遮られる問題を修復 ([#8443](https://github.com/nocobase/nocobase/pull/8443)) by @zhangzhonghe
+  * filter リストの重複排除 ([#8431](https://github.com/nocobase/nocobase/pull/8431)) by @jiannx
+  * 編集フォームで閲覧モードのサブ詳細データが正常に表示されない問題を修復 ([#8469](https://github.com/nocobase/nocobase/pull/8469)) by @katherinehhh
+  * カスタム変数モーダルが遮られる問題を修復 ([#8463](https://github.com/nocobase/nocobase/pull/8463)) by @zhangzhonghe
+  * リレーションファイルのクイック編集でファイル選択モーダルの階層が誤り、モーダル設定を保存できない問題を修復。 ([#8446](https://github.com/nocobase/nocobase/pull/8446)) by @gchust
+  * クイックモーダルの高さがページ高さを超える問題を修復 ([#8437](https://github.com/nocobase/nocobase/pull/8437)) by @zhangzhonghe
+  * ページネーション切り替え時にテーブルブロック操作列の状態が汚染される問題を修復。 ([#8438](https://github.com/nocobase/nocobase/pull/8438)) by @gchust
+  * フォームのリレーションフィールドタイトルに添付URLを設定後、他フィールドに変更するとタイトル設定項目が消失する問題を修復 ([#8418](https://github.com/nocobase/nocobase/pull/8418)) by @katherinehhh
+  * 新規フォームでリレーションフィールドを閲覧モードに設定後、タイトルフィールドを切り替えても反映されない問題を修復 ([#8413](https://github.com/nocobase/nocobase/pull/8413)) by @katherinehhh
+  * 数値コンポーネントが値を表示しない ([#8410](https://github.com/nocobase/nocobase/pull/8410)) by @chenos
+  * グリッドカードブロックで layout にコロンがないと反映されない問題を修復 ([#8399](https://github.com/nocobase/nocobase/pull/8399)) by @katherinehhh
+  * リレーションファイルテーブルで一対一リレーションフィールドのファイル選択モーダル右下に送信ボタンが表示される問題を修復 ([#8398](https://github.com/nocobase/nocobase/pull/8398)) by @katherinehhh
+  * フォーム内で数値入力時に漢字を入力しても値設定を防止しない問題を修復 ([#8397](https://github.com/nocobase/nocobase/pull/8397)) by @katherinehhh
+  * targetKey オプションフィールドの処理ロジックを修復 ([#8333](https://github.com/nocobase/nocobase/pull/8333)) by @katherinehhh
+  * リレーションフィールドをデータセレクターから選択コンポーネントへ切り替えた後もモーダルを開けてしまう問題を修復。 ([#8375](https://github.com/nocobase/nocobase/pull/8375)) by @gchust
+  * 詳細・編集フォーム・リストブロックでページ切り替え後に連動ルールが再実行されない問題を修復。 ([#8366](https://github.com/nocobase/nocobase/pull/8366)) by @gchust
+  * フィールドコンポーネントを切り替える過程で設定済みサブフォーム／サブテーブル内のフィールドが表示されない問題を修復。 ([#8365](https://github.com/nocobase/nocobase/pull/8365)) by @gchust
+  * 詳細・リスト・フォームブロックでページ切り替え後にフィールドおよび操作の権限が再計算されない問題を修復。 ([#8336](https://github.com/nocobase/nocobase/pull/8336)) by @gchust
+  * 編集モードのサブテーブルでリレーションフィールド Select の filter パラメータが誤っている問題を修復 ([#8335](https://github.com/nocobase/nocobase/pull/8335)) by @katherinehhh
+  * targetKey オプションフィールドの処理ロジックを修復 ([#8333](https://github.com/nocobase/nocobase/pull/8333)) by @katherinehhh
+  * 詳細ブロック内のサブ詳細モーダルのデータ誤りを修復 ([#8318](https://github.com/nocobase/nocobase/pull/8318)) by @katherinehhh
+  * 連続してモーダルを開き、連動ルールおよびイベントフロー設定モーダルを開閉後に現在のモーダルを閉じるとエラーが発生する問題を修復。 ([#8312](https://github.com/nocobase/nocobase/pull/8312)) by @gchust
+  * テーブルブロックのクイック編集スイッチ変更後にページをリフレッシュしないと反映されない問題を修復。 ([#8311](https://github.com/nocobase/nocobase/pull/8311)) by @gchust
+  * メニュー切り替え時に URL のクエリパラメータが変更されると、そのパラメータに依存するデータ範囲ブロックが正しく更新されない問題を修復。 ([#8310](https://github.com/nocobase/nocobase/pull/8310)) by @gchust
+  * リレーションフィールドコンポーネントの権限問題を修復 ([#8243](https://github.com/nocobase/nocobase/pull/8243)) by @katherinehhh
+  * 詳細ブロック内のサブ詳細コンポーネントがページ切り替え時にデータ更新されない問題を修復 ([#8305](https://github.com/nocobase/nocobase/pull/8305)) by @katherinehhh
+  * 編集フォームでページ切り替え時にサブフォーム内のネストされたサブテーブル内容が更新されない問題を修復 ([#8304](https://github.com/nocobase/nocobase/pull/8304)) by @katherinehhh
+  * モーダルが開かない問題を修復し、ナビゲーションの安定性を改善 ([#8287](https://github.com/nocobase/nocobase/pull/8287)) by @zhangzhonghe
+  * ドロップダウン選択コンポーネントから配列サブフォームコンポーネントへ切り替える際のエラーを修復 ([#8301](https://github.com/nocobase/nocobase/pull/8301)) by @katherinehhh
+  * JS Field を通じてフォームに関連フィールドを追加できないようにする。 ([#8296](https://github.com/nocobase/nocobase/pull/8296)) by @gchust
+  * レコード更新操作後にデータが複数回リフレッシュされる問題を修復。 ([#8299](https://github.com/nocobase/nocobase/pull/8299)) by @gchust
+  * 多対多フィールドのサブフォームで AddNew 内容が選択データに上書きされる問題を修復 ([#8292](https://github.com/nocobase/nocobase/pull/8292)) by @katherinehhh
+  * 詳細ブロックでレコード編集後に JS Item がリフレッシュされない問題を修復。 ([#8291](https://github.com/nocobase/nocobase/pull/8291)) by @gchust
+  * データセレクターフィールドコンポーネントのモーダルで新規レコード追加後にリフレッシュされない問題を修復。 ([#8289](https://github.com/nocobase/nocobase/pull/8289)) by @gchust
+  * 非表示状態の JS block ブロックでレンダリングエラーが発生する問題を修復。 ([#8286](https://github.com/nocobase/nocobase/pull/8286)) by @gchust
+  * 手動ノードフォームで多対多データセレクターのフォームブロックメニューでエラーが発生する問題を修復 ([#8282](https://github.com/nocobase/nocobase/pull/8282)) by @mytharcher
+  * リレーションフィールド削除後にブロックでエラーが発生する問題を修復 ([#8273](https://github.com/nocobase/nocobase/pull/8273)) by @katherinehhh
+  * フィルタフォームのフィールドデフォルト値が初期レンダリング時に一度フィルタをトリガーしない問題を修復 ([#8232](https://github.com/nocobase/nocobase/pull/8232)) by @zhangzhonghe
+  * テーブルブロックの操作列を削除できない問題を修復。 ([#8230](https://github.com/nocobase/nocobase/pull/8230)) by @gchust
+  * プレビュー実行時に JSX コンパイル結果を stepParams に書き戻してしまい、保存後にソースコードが書き換えられる問題を修復。 ([#8171](https://github.com/nocobase/nocobase/pull/8171)) by @gchust
+  * S3 Pro 添付ファイルアップロードエラーを修復し、ファイルプレビューを改善 ([#8211](https://github.com/nocobase/nocobase/pull/8211)) by @katherinehhh
+  * 列幅調整時に単一行の合計幅がオーバーフローしないようにする ([#8166](https://github.com/nocobase/nocobase/pull/8166)) by @zhangzhonghe
+  * フィルタフォームでチェックボックス「いいえ」を選択しても「はい」としてフィルタされる問題を修復。 ([#8170](https://github.com/nocobase/nocobase/pull/8170)) by @gchust
+  * 役割が新規作成権限を持つ場合に新規フォームの送信ボタンが表示されない問題を修復 ([#8190](https://github.com/nocobase/nocobase/pull/8190)) by @katherinehhh
+  * サブテーブル／サブフォームで既存データから選択時に未選択項目を送信するとデータがクリアされる問題を修復 ([#8172](https://github.com/nocobase/nocobase/pull/8172)) by @katherinehhh
+  * 新規フォーム設定でデータ範囲設定が表示される問題を修復 ([#8176](https://github.com/nocobase/nocobase/pull/8176)) by @katherinehhh
+  * フォーム内の tableoid フィールドのレンダリングエラーを修復 ([#8177](https://github.com/nocobase/nocobase/pull/8177)) by @katherinehhh
+  * タブのイベントフローが保存できない ([#8168](https://github.com/nocobase/nocobase/pull/8168)) by @chenos
+  * タブ非表示後も間隔を占有する問題を修復 ([#8167](https://github.com/nocobase/nocobase/pull/8167)) by @chenos
+  * リレーション選択レコーダーで選択済み項目が誤ってフィルタされる問題を修復 ([#8151](https://github.com/nocobase/nocobase/pull/8151)) by @katherinehhh
+  * リレーションフィールドのドロップダウンで options フィールド存在時にグレー表示で選択不可になる問題を修復 ([#8153](https://github.com/nocobase/nocobase/pull/8153)) by @katherinehhh
+  * タグフィールド切り替え時にモーダル設定が失われる問題を修復。 ([#8136](https://github.com/nocobase/nocobase/pull/8136)) by @gchust
+  * フィルタフォームで単一選択フィールドに複数選択演算子を使用時、中文入力で既存オプションが消える問題を修復。 ([#8140](https://github.com/nocobase/nocobase/pull/8140)) by @gchust
+  * リレーションフィールド選択が子フィールドの disabled 制限を受ける問題を修復 ([#8131](https://github.com/nocobase/nocobase/pull/8131)) by @katherinehhh
+  * フィルタフォームフィールドのデフォルトラベルが正しく多言語翻訳されない問題を修復。 ([#8135](https://github.com/nocobase/nocobase/pull/8135)) by @gchust
+  * 日付フィルタフィールドで「過去」または「未来」選択時に UI コンポーネント幅が不一致となる問題を修復。 ([#8130](https://github.com/nocobase/nocobase/pull/8130)) by @gchust
+  * JS block ブロックのタイトルと説明スタイルが他ブロックと一致しない問題を修復。 ([#8115](https://github.com/nocobase/nocobase/pull/8115)) by @gchust
+  * 複数行テキストが改行されない問題を修復 ([#8122](https://github.com/nocobase/nocobase/pull/8122)) by @katherinehhh
+  * 演算子が「いずれかを含む」および「いずれも含まない」の場合にオプションフィールドフィルタで全オプションが表示されない問題を修復。 ([#8118](https://github.com/nocobase/nocobase/pull/8118)) by @gchust
+  * サブフォーム内ネストされたサブテーブルにデータが表示されない問題を修復 ([#8117](https://github.com/nocobase/nocobase/pull/8117)) by @katherinehhh
+  * フィルタ操作で期間フィルタ値をクリア後に再度フィルタするとエラーになる問題を修復。 ([#8110](https://github.com/nocobase/nocobase/pull/8110)) by @gchust
+  * フィルタフォームのリレーションフィールドで選択可能データが正しくない問題を修復。 ([#8109](https://github.com/nocobase/nocobase/pull/8109)) by @gchust
+  * フィルタフォームのカスタムフィールド設定が正しく反映・一部設定が有効にならない問題を修復。 ([#8106](https://github.com/nocobase/nocobase/pull/8106)) by @gchust
+  * Checkbox フィールドのフィルタが機能しない問題を修復。 ([#8103](https://github.com/nocobase/nocobase/pull/8103)) by @gchust
+  * フィルタ操作で number フィールド値が正しく反映されない問題を修復。 ([#8104](https://github.com/nocobase/nocobase/pull/8104)) by @gchust
+  * フィルタフォームで一部フィールドの演算子が正しくデータをフィルタできない問題を修復。 ([#8100](https://github.com/nocobase/nocobase/pull/8100)) by @gchust
+  * ブロック削除後にフィルタブロック内の該当フィールドが削除されない問題を修復。 ([#8098](https://github.com/nocobase/nocobase/pull/8098)) by @gchust
+  * ボタン非表示後、非設定モードで余分な間隔が表示される問題を修復 ([#8092](https://github.com/nocobase/nocobase/pull/8092)) by @katherinehhh
+  * フィルタフォームのリセットボタン文言を変更できない問題を修復。 ([#8089](https://github.com/nocobase/nocobase/pull/8089)) by @gchust
+  * フィールドフィルタ演算子が \$in および \$notIn の場合に複数入力値をサポートしない問題を修復。 ([#8081](https://github.com/nocobase/nocobase/pull/8081)) by @gchust
+  * データブロック追加後にフィルタフォームのフィールドメニューに自動表示されない問題を修復。 ([#8085](https://github.com/nocobase/nocobase/pull/8085)) by @gchust
+  * フィルタフォームのリレーションフィールド設定メニューにクイック作成が表示されるべきでない。 ([#8083](https://github.com/nocobase/nocobase/pull/8083)) by @gchust
+  * リストブロック内のリレーションサブテーブルデータ誤りを修復 ([#8082](https://github.com/nocobase/nocobase/pull/8082)) by @katherinehhh
+  * データテーブルで設定した数値フィールド検証ルールがフォームで有効にならない問題を修復 ([#8025](https://github.com/nocobase/nocobase/pull/8025)) by @katherinehhh
+  * フィルタフォームのフィールドがバックエンド検証ルールにより制限される問題を修復。 ([#8074](https://github.com/nocobase/nocobase/pull/8074)) by @gchust
+  * サブテーブルで大きなフィールド編集時の表示異常を修復 ([#8069](https://github.com/nocobase/nocobase/pull/8069)) by @katherinehhh
+  * 多対多リレーションのドロップダウンで複数選択許可をオフにするとクイック追加でエラーになる問題を修復 ([#8034](https://github.com/nocobase/nocobase/pull/8034)) by @katherinehhh
+  * json フィールドのクイック編集エラーを修復 ([#8059](https://github.com/nocobase/nocobase/pull/8059)) by @katherinehhh
+  * json フィールドは送信時にオブジェクトであるべき ([#8057](https://github.com/nocobase/nocobase/pull/8057)) by @katherinehhh
+  * Enter キーでフィルタ操作をトリガーできない問題を修復。 ([#8056](https://github.com/nocobase/nocobase/pull/8056)) by @gchust
+  * 多対多ドロップダウンで複数選択無効化後に N/A と表示される問題を修復 ([#8050](https://github.com/nocobase/nocobase/pull/8050)) by @katherinehhh
+  * データセレクターブロックで一括削除が失敗する問題を修復 ([#8023](https://github.com/nocobase/nocobase/pull/8023)) by @katherinehhh
+  * コメントブロック追加時に現在レコードメニューが表示される問題を修復。 ([#8039](https://github.com/nocobase/nocobase/pull/8039)) by @gchust
+  * フィルタ操作で日付フィールドを時間フィールドに切り替えた際のレンダリングエラーを修復。 ([#8036](https://github.com/nocobase/nocobase/pull/8036)) by @gchust
+  * 編集操作および新規操作モーダルのデフォルトタイトルが不正確な問題を修復。 ([#8033](https://github.com/nocobase/nocobase/pull/8033)) by @gchust
+  * 詳細ブロック内の JS field のデフォルトスタイルが不正確な問題を修復。 ([#8031](https://github.com/nocobase/nocobase/pull/8031)) by @gchust
+  * サブテーブルの列幅設定が無効な問題を修復 ([#8027](https://github.com/nocobase/nocobase/pull/8027)) by @katherinehhh
+  * サブテーブルの列ドラッグが無効な問題を修復 ([#8026](https://github.com/nocobase/nocobase/pull/8026)) by @katherinehhh
+  * リレーションフィールドで開いたモーダル内の現在モーダルレコード変数を正しく解析できない問題を修復。 ([#8019](https://github.com/nocobase/nocobase/pull/8019)) by @gchust
+  * markdown フィールドの Popover スタイル問題を修復 ([#8012](https://github.com/nocobase/nocobase/pull/8012)) by @katherinehhh
+  * モーダル内でリレーションフィールドデータ読み込み時にエラーが発生する問題を修復し、表示と機能を改善。 ([#7985](https://github.com/nocobase/nocobase/pull/7985)) by @gchust
+  * ツリーテーブルブロックで子ノードを展開できない問題を修復 ([#8011](https://github.com/nocobase/nocobase/pull/8011)) by @katherinehhh
+  * 複合主キーテーブルブロックで行選択と削除が無効な問題を修復 ([#7978](https://github.com/nocobase/nocobase/pull/7978)) by @katherinehhh
+  * ページ遷移時にページタブ状態とルーティングが一致しない問題を修復 ([#7991](https://github.com/nocobase/nocobase/pull/7991)) by @zhangzhonghe
+  * markdown フィールドの html モードで幅超過時の省略表示が異常な問題を修復 ([#7994](https://github.com/nocobase/nocobase/pull/7994)) by @katherinehhh
+  * カスケードドロップダウンセレクターで検索データが不完全な問題を修復 ([#7990](https://github.com/nocobase/nocobase/pull/7990)) by @katherinehhh
+  * id 以外のリレーションフィールドモーダル詳細ブロックでエラーが発生する問題を修復。 ([#7973](https://github.com/nocobase/nocobase/pull/7973)) by @gchust
+  * id 以外のリレーションフィールドモーダルでリレーションデータ読み込みエラーを修復。 ([#7970](https://github.com/nocobase/nocobase/pull/7970)) by @gchust
+  * 数値フィールドのフォーマット精度設定が無効な問題を修復 ([#7967](https://github.com/nocobase/nocobase/pull/7967)) by @katherinehhh
+  * フィルタリセットボタン押下時にフィルタ値がクリアされない問題を修復 ([#7966](https://github.com/nocobase/nocobase/pull/7966)) by @zhangzhonghe
+  * 新規 2.0 ページタイプが不正確な問題を修復 ([#7945](https://github.com/nocobase/nocobase/pull/7945)) by @zhangzhonghe
+  * 詳細ブロックでテキストフィールドが幅超過時にデフォルトで改行するようにする ([#7955](https://github.com/nocobase/nocobase/pull/7955)) by @katherinehhh
+  * 多段カスケードセレクターでデータクリア時のエラーを修復 ([#7943](https://github.com/nocobase/nocobase/pull/7943)) by @katherinehhh
+  * ツリーテーブルボタンが非ツリーテーブルブロックに表示される問題を修復 ([#7931](https://github.com/nocobase/nocobase/pull/7931)) by @katherinehhh
+  * JS block ブロックのタイトルと説明が表示されない問題を修復。 ([#7913](https://github.com/nocobase/nocobase/pull/7913)) by @gchust
+  * ブロックが非表示後もページスペースを占有する問題を修復。 ([#7906](https://github.com/nocobase/nocobase/pull/7906)) by @gchust
+  * 新規フォームのサブフォームフィールド権限判定エラーを修復 ([#7902](https://github.com/nocobase/nocobase/pull/7902)) by @katherinehhh
+  * フィルタボタンでリセットボタンがデフォルト条件をクリアする問題を修復 ([#7903](https://github.com/nocobase/nocobase/pull/7903)) by @zhangzhonghe
+  * フォームフィールド設定項目の不具合を修復 ([#7867](https://github.com/nocobase/nocobase/pull/7867)) by @katherinehhh
+  * リッチテキストフィールドでデフォルト値入力不可および複数選択フィールドで複数デフォルト値設定不可問題を修復。 ([#7864](https://github.com/nocobase/nocobase/pull/7864)) by @gchust
+  * デフォルト js field 設定が表示モード設定を使用していない問題を修復。 ([#7862](https://github.com/nocobase/nocobase/pull/7862)) by @gchust
+  * フィルタフォーム日付フィールドのデフォルト値を正しく設定できない問題を修復。 ([#7853](https://github.com/nocobase/nocobase/pull/7853)) by @gchust
+  * テーブルブロックのクイック編集操作でデータ更新が正しく反映されない問題を修復。 ([#7845](https://github.com/nocobase/nocobase/pull/7845)) by @gchust
+  * コードエディタでプレビュー時に jsx 構文使用でエラーが発生する問題を修復 ([#7836](https://github.com/nocobase/nocobase/pull/7836)) by @gchust
+  * テーブル行データ更新後に行操作ボタンの連動ルールが再実行されない問題を修復し、データ変更時に正しく適用されるようにする。 ([#7832](https://github.com/nocobase/nocobase/pull/7832)) by @gchust
+  * フィルタフォームのリレーションフィールドで “value.replace is not a function” エラーを修復 ([#7824](https://github.com/nocobase/nocobase/pull/7824)) by @zhangzhonghe
+  * 現在データテーブル変数がフィルタコンポーネントの変数セレクターから選択できないようにする ([#7818](https://github.com/nocobase/nocobase/pull/7818)) by @gchust
+  * onChange コールバック引数誤りを修復 ([#7807](https://github.com/nocobase/nocobase/pull/7807)) by @zhangzhonghe
+  * テーブルブロック操作列を非表示にできない問題を修復 ([#7804](https://github.com/nocobase/nocobase/pull/7804)) by @gchust
+  * データテーブルセレクターフィールドでデータ選択できない問題を修復 ([#7794](https://github.com/nocobase/nocobase/pull/7794)) by @katherinehhh
+  * AI 従業員指示で変数オブジェクト全体を選択可能にする ([#7791](https://github.com/nocobase/nocobase/pull/7791)) by @gchust
+  * テーブル操作列と jsColumn 列幅設定が無効な問題を修復 ([#7777](https://github.com/nocobase/nocobase/pull/7777)) by @katherinehhh
+  * ページイベントフローでページブロックのデータ範囲設定が反映されない問題 ([#7788](https://github.com/nocobase/nocobase/pull/7788)) by @gchust
+  * リレーションフィールドタイトルが省略表示設定しても反映されない問題 ([#7778](https://github.com/nocobase/nocobase/pull/7778)) by @katherinehhh
+  * 更新操作ボタンの連動ルールが無効になる問題 ([#7774](https://github.com/nocobase/nocobase/pull/7774)) by @gchust
+  * Markdown Vditor フィールド必須検証失敗問題を修復 ([#7764](https://github.com/nocobase/nocobase/pull/7764)) by @katherinehhh
+  * 変数関連コンポーネントで列挙型ラベルが対応言語で正しく表示されない問題を修復。 ([#7765](https://github.com/nocobase/nocobase/pull/7765)) by @gchust
+  * フロントエンド検証設定後に必須設定すると必須マークが欠落する問題を修復 ([#7760](https://github.com/nocobase/nocobase/pull/7760)) by @katherinehhh
+  * フィルタフォームのリレーションフィールドでデータ範囲設定をサポート ([#7761](https://github.com/nocobase/nocobase/pull/7761)) by @zhangzhonghe
+  * フォーム内の非タイムゾーン日付クリア時の異常を修復 ([#7759](https://github.com/nocobase/nocobase/pull/7759)) by @katherinehhh
+  * 連動ルール設定の必須フィールドが正常動作しない問題を修復 ([#7756](https://github.com/nocobase/nocobase/pull/7756)) by @zhangzhonghe
+  * サブテーブル時間フィールドのフォーマット誤りを修復 ([#7750](https://github.com/nocobase/nocobase/pull/7750)) by @katherinehhh
+  * フィルタフォーム日付フィールドで「指定日」削除時に Invalid Date になる問題を修復 ([#7746](https://github.com/nocobase/nocobase/pull/7746)) by @katherinehhh
+  * 現在フォーム変数フィールドを読み込めない ([#7745](https://github.com/nocobase/nocobase/pull/7745)) by @gchust
+  * 変数解析結果が配列で「対一」フィールド値またはデフォルト値に設定された場合にエラーとなる問題を修復。解析結果の正しい処理を保証し、安定性と正確性を向上。 ([#7735](https://github.com/nocobase/nocobase/pull/7735)) by @gchust
+  * 現在フォームの関連フィールド変数が正しく認識されない問題を解決し、データ処理の正確性を向上。 ([#7726](https://github.com/nocobase/nocobase/pull/7726)) by @gchust
+  * フィルタ不可フィールドが誤ってフィルタオプションに表示される問題を修復し、利用可能フィールドのみ表示。 ([#7700](https://github.com/nocobase/nocobase/pull/7700)) by @gchust
+  * データテーブルのリレーションフィールド削除後に UI ブロック表示が異常になる問題を修復 ([#7706](https://github.com/nocobase/nocobase/pull/7706)) by @katherinehhh
+  * サブフォーム連動ルールの既知問題を修復 ([#7698](https://github.com/nocobase/nocobase/pull/7698)) by @zhangzhonghe
+  * フィルタフォームの JS ブロックフィールドが読み込めない ([#7690](https://github.com/nocobase/nocobase/pull/7690)) by @gchust
+  * フィールドが読み取り専用時にデフォルト値設定不可問題を修復し、設定を円滑化。 ([#7689](https://github.com/nocobase/nocobase/pull/7689)) by @gchust
+  * モーダルでタブ切替後に二次モーダルを開閉し全モーダル閉鎖後に URL が正しく更新されない問題を修復。 ([#7630](https://github.com/nocobase/nocobase/pull/7630)) by @gchust
+  * usePlugin のコンテキスト欠如時のエラーを修復 ([#7627](https://github.com/nocobase/nocobase/pull/7627)) by @chenos
+  * `一括更新` と `更新` 操作で代入フィールド設定不可 ([#7565](https://github.com/nocobase/nocobase/pull/7565)) by @gchust
+  * コードエディタの「実行」機能が正常動作しない問題を修復し、正しく実行可能にする。 ([#7547](https://github.com/nocobase/nocobase/pull/7547)) by @gchust
+  * フォーム送信後にデータがリフレッシュされない問題を修復 ([#7560](https://github.com/nocobase/nocobase/pull/7560)) by @zhangzhonghe
+  * テーブルページ切替時にページ表示が異常となる問題を修復 ([#7572](https://github.com/nocobase/nocobase/pull/7572)) by @zhangzhonghe
+- - フィルターフィールド子メニューに検索文字があると展開できない問題を修正しました ([#8604](https://github.com/nocobase/nocobase/pull/8604)) by @gchust
   - JS block で Blob オブジェクトを作成できない問題を修正しました ([#8603](https://github.com/nocobase/nocobase/pull/8603)) by @gchust
   - JS Models の "ctx.sql" 実行時にコンテキストが不正になる問題を修正しました ([#8602](https://github.com/nocobase/nocobase/pull/8602)) by @gchust
   - 子テーブル（モーダル編集）で createModelOptions 設定後に列削除が効かない問題を修正しました ([#8576](https://github.com/nocobase/nocobase/pull/8576)) by @katherinehhh
