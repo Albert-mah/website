@@ -1,14 +1,14 @@
 {
   "id": 908,
-  "title": "NocoBase v2.0.3: Add an experimental \"Reference block\" plugin, which allows reusing existing blocks by referencing or copying.",
-  "title_cn": "NocoBase v2.0.3：新增实验性质的\"引用区块\"插件，支持以引用和复制的方式复用已有的区块。",
-  "title_ja": "NocoBase v2.0.3：",
+  "title": "NocoBase v2.0.3: support configurable block height",
+  "title_cn": "NocoBase v2.0.3：区块支持高度设置",
+  "title_ja": "NocoBase v2.0.3：ブロックが高さ設定をサポートしました",
   "description": "Release Note of v2.0.3",
   "description_cn": "v2.0.3 更新日志",
   "description_ja": "v2.0.3 リリースノート",
   "slug": "v2.0.3",
   "publishedAt": "2026-02-25T00:00:00.000Z",
-  "status": "drafted",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -89,5 +89,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-02-25T14:46:11.664Z"
+  "updatedAt": "2026-02-25T16:25:53.684Z"
 }
