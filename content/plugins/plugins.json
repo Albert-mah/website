@@ -4846,7 +4846,7 @@
   },
   {
     "createdAt": null,
-    "updatedAt": "2026-02-11T14:47:15.461Z",
+    "updatedAt": "2026-02-25T08:43:54.988Z",
     "archived": null,
     "category_id": "actions",
     "coming": null,
@@ -4862,6 +4862,7 @@
     "id": 215,
     "internal": null,
     "is_free": null,
+    "license_included_new": "professional",
     "name": "Action: Template print",
     "name_cn": "模板打印",
     "name_jp": "Action: Template print",
