@@ -57,7 +57,6 @@
 - **[数据源管理]**
 
   - 主数据源支持从主数据库中读取数据表，并支持更改字段 interface ([#7118](https://github.com/nocobase/nocobase/pull/7118)) by @aaaaaajie
-  - 主数据源支持从主数据库中读取数据表，并支持更改字段 interface ([#7118](https://github.com/nocobase/nocobase/pull/7118)) by @aaaaaajie
 - **[区块：列表]** 新增 2.0 列表区块 ([#7574](https://github.com/nocobase/nocobase/pull/7574)) by @katherinehhh
 - **[区块：操作面板]** 新增 2.0 操作面板区块 ([#7594](https://github.com/nocobase/nocobase/pull/7594)) by @katherinehhh
 - **[遥测]** 新增插件：遥测，基于 OpenTelemetry 的应用遥测插件，内置 CPU、内存、HTTP 请求等指标，并支持通过 HTTP 导出 by @2013xile
