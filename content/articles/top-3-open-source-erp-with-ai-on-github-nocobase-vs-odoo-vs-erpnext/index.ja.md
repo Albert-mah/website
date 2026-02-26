@@ -6,9 +6,9 @@
 
 このユーザーが特に重視していたのは、プロジェクト型業務への対応可否、基本的な財務および購買プロセスをカバーできるか、さらに既存の業務ツールと連携できるかといった実務的なポイントでした。
 
-これらは、多くの企業が ERP を選定する際に共通して直面する課題でもあります。小規模チーム向けの ERP を検討している場合、私たちは以前、[中小企業向け ERP 選定ガイドを公開しています](https://www.nocobase.com/cn/blog/best-erp-solutions-for-small-businesses)。
+これらは、多くの企業が ERP を選定する際に共通して直面する課題でもあります。小規模チーム向けの ERP を検討している場合、私たちは以前、[中小企業向け ERP 選定ガイドを公開しています](https://www.nocobase.com/ja/blog/best-erp-solutions-for-small-businesses)。
 
-オープンソースエコシステムの発展により、GitHub には多くの成熟した ERP プロジェクトが登場しています。私たちはこれまでに[「GitHub で開発者から支持されているオープンソース ERP / CRM プロジェクト 10 選」](https://www.nocobase.com/cn/blog/top-10-most-starred-open-source-erp-and-crm-on-github)として全体像を紹介しました。しかし、AI を深く統合したオープンソース ERP はまだ限られており、多くのシステムでは AI 機能の実装にプラグインやカスタム開発が必要です。
+オープンソースエコシステムの発展により、GitHub には多くの成熟した ERP プロジェクトが登場しています。私たちはこれまでに[「GitHub で開発者から支持されているオープンソース ERP / CRM プロジェクト 10 選」](https://www.nocobase.com/ja/blog/top-10-most-starred-open-source-erp-and-crm-on-github)として全体像を紹介しました。しかし、AI を深く統合したオープンソース ERP はまだ限られており、多くのシステムでは AI 機能の実装にプラグインやカスタム開発が必要です。
 
 本記事では、コミュニティで注目度が高く、AI 拡張性を備えている、または AI 統合を進めている 3 つの ERP システムを紹介します。
 
@@ -26,16 +26,6 @@
 | NocoBase | AI アプリケーション構築プラットフォーム | 業務プロセスに参加する AI 従業員               | 技術チーム / DX 推進チーム | カスタム ERP 構築、複雑な業務プロセス管理、複数システム統合 |
 | Odoo     | モジュール型統合 ERP プラットフォーム   | 組み込み AI アシスタントおよび AI エージェント | 中小企業および成長企業     | 標準的な業務管理、製造業、EC 運営                           |
 | ERPNext  | オープンソース ERP スイート             | API 連携による AI・LLM 拡張                    | 開発体制を持つチーム       | 自社運用 ERP、カスタマイズ型業務管理システム                |
-
-本記事では、GitHub のコミュニティで注目を集めており、AI 拡張性を備える、または AI 機能の統合が進められている 3 つの ERP システムを紹介します。
-
-* NocoBase
-* ERPNext
-* Odoo
-
-これら 3 つの ERP を、システムアーキテクチャ、現在の AI 機能、想定されるユースケースの観点から整理・比較し、製品選定の参考となる情報を提供します。
-
-各 AI ERP の主な違いを素早く把握したい場合は、以下のまとめをご覧ください。
 
 ## NocoBase
 
@@ -85,7 +75,7 @@ AI 従業員は構造化データおよび非構造化データを処理し、�
 
 ![NocoBase4.png](https://static-docs.nocobase.com/NocoBase4-jmf5r1.png)
 
-💡続きを読む: [コミュニティ事例: NocoBase で実運用可能な ERP を構築](https://www.nocobase.com/cn/blog/an-erp-built-with-nocobase)
+💡続きを読む: [コミュニティ事例: NocoBase で実運用可能な ERP を構築](https://www.nocobase.com/ja/blog/an-erp-built-with-nocobase)
 
 ## Odoo
 
