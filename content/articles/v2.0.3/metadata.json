@@ -1,8 +1,8 @@
 {
   "id": 908,
-  "title": "NocoBase v2.0.3: support configurable block height",
-  "title_cn": "NocoBase v2.0.3：区块支持高度设置",
-  "title_ja": "NocoBase v2.0.3：ブロックが高さ設定をサポートしました",
+  "title": "NocoBase v2.0.3: Open source commercial plugins and update license from AGPL-3.0 to Apache-2.0",
+  "title_cn": "NocoBase v2.0.3：将多个商业插件开源，并将协议由 AGPL-3.0 调整为 Apache-2.0 ",
+  "title_ja": "NocoBase v2.0.3：複数の商用プラグインをオープンソース化し、ライセンスを AGPL-3.0 から Apache-2.0 に調整しました",
   "description": "Release Note of v2.0.3",
   "description_cn": "v2.0.3 更新日志",
   "description_ja": "v2.0.3 リリースノート",
@@ -89,5 +89,5 @@
   "ai_generated": false,
   "ai_generated_cn": null,
   "ai_generated_ja": true,
-  "updatedAt": "2026-02-25T16:25:53.684Z"
+  "updatedAt": "2026-02-26T01:50:00.123Z"
 }
