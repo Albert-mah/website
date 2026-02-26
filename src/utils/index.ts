@@ -15,7 +15,6 @@ export const SUPPORTED_LANGUAGES = {
   en: { code: 'en', locale: 'en-US', name: 'English', default: true },
   cn: { code: 'cn', locale: 'zh-CN', name: 'Chinese' },
   ja: { code: 'ja', locale: 'ja-JP', name: 'Japanese' },
-  ru: { code: 'ru', locale: 'ru-RU', name: 'Russian' }
 } as const;
 
 export const DEFAULT_LANGUAGE = 'en';
@@ -653,7 +652,7 @@ export async function getRssItems(locale = '*') {
   const { data } = await listArticles({ pageSize: 5000, hideOnBlog: false });
   const items = [];
 
-  const locales = locale === '*' ? ['en', 'cn', 'ja', 'ru', 'fr'] : [locale];
+  const locales = locale === '*' ? ['en', 'cn', 'ja', 'fr'] : [locale];
 
   for (const post of data) {
     for (const currentLocale of locales) {
@@ -800,7 +799,6 @@ export async function getSitemapLinks() {
     { lang: 'en-US', url: `/en${path}` },
     { lang: 'zh-CN', url: `/cn${path}` },
     { lang: 'ja-JP', url: `/ja${path}` },
-    { lang: 'ru-RU', url: `/ru${path}` },
     { lang: 'fr-FR', url: `/fr${path}` },
     { lang: 'x-default', url: `/en${path}` },
   ];
@@ -812,7 +810,6 @@ export async function getSitemapLinks() {
         { lang: 'en-US', url: `/en/` },
         { lang: 'zh-CN', url: `/cn/` },
         { lang: 'ja-JP', url: `/ja/` },
-        { lang: 'ru-RU', url: `/ru/` },
         { lang: 'fr-FR', url: `/fr/` },
         { lang: 'x-default', url: `/` },
       ],
