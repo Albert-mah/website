@@ -6,9 +6,9 @@ For small and medium sized teams, many ERP systems appear feature rich at first 
 
 The user highlighted several practical requirements: whether the system supports project based operations, whether it covers core financial and procurement workflows, and whether it can integrate with existing workplace tools.
 
-These challenges are common for many organizations when selecting an ERP system. If you are also looking for [a suitable ERP for a small team](https://www.nocobase.com/cn/blog/best-erp-solutions-for-small-businesses), we previously published a guide on ERP selection for small and medium sized businesses.
+These challenges are common for many organizations when selecting an ERP system. If you are also looking for [a suitable ERP for a small team](https://www.nocobase.com/en/blog/best-erp-solutions-for-small-businesses), we previously published a guide on ERP selection for small and medium sized businesses.
 
-As the open source ecosystem continues to grow, a number of mature ERP projects have emerged on GitHub. We previously provided an overall overview in “[10 Most Developer Loved Open Source ERP and CRM Projects on GitHub](https://www.nocobase.com/cn/blog/top-10-most-starred-open-source-erp-and-crm-on-github)”. However, open source ERPs with deep AI integration remain relatively limited, as most platforms still depend on plugins or custom development to introduce AI capabilities.
+As the open source ecosystem continues to grow, a number of mature ERP projects have emerged on GitHub. We previously provided an overall overview in “[10 Most Developer Loved Open Source ERP and CRM Projects on GitHub](https://www.nocobase.com/en/blog/top-10-most-starred-open-source-erp-and-crm-on-github)”. However, open source ERPs with deep AI integration remain relatively limited, as most platforms still depend on plugins or custom development to introduce AI capabilities.
 
 In this article, we take a closer look at three ERP systems on GitHub that are widely discussed in the community and offer AI extensibility or early stage AI integration:
 
@@ -26,16 +26,6 @@ If you want a quick overview of the key differences between these AI ERP solutio
 | NocoBase | AI application development platform | AI employees involved in business operations | Technical teams / Digital transformation teams          | Custom ERP systems, complex business workflows, multi system integration |
 | Odoo     | Fully modular ERP platform          | Built in AI assistant and agents             | Small and medium sized businesses and growing companies | Standardized business management, manufacturing, e commerce              |
 | ERPNext  | Open source ERP suite               | AI and LLM extensions via API integration    | Development oriented teams                              | Self hosted ERP deployments, customized business management systems      |
-
-In this article, we will take a closer look at three ERP systems on GitHub that are actively discussed within the community and offer AI extensibility or have already begun integrating AI capabilities:
-
-* NocoBase
-* ERPNext
-* Odoo
-
-We will provide a brief comparison of these three ERP platforms based on their core system architecture, current AI capabilities, and suitable use cases, with the aim of offering practical reference points for your evaluation.
-
-If you would like a quick overview of the key differences between these AI ERP solutions, you can start with the summary below.
 
 ## NocoBase
 
@@ -85,7 +75,7 @@ Through its plugin based architecture, organizations can integrate different lar
 
 ![NocoBase4.png](https://static-docs.nocobase.com/NocoBase4-jmf5r1.png)
 
-💡Read more: [Community Story: Building a Production Ready ERP with NocoBase](https://www.nocobase.com/cn/blog/an-erp-built-with-nocobase)
+💡Read more: [Community Story: Building a Production Ready ERP with NocoBase](https://www.nocobase.com/en/blog/an-erp-built-with-nocobase)
 
 ## Odoo
 
