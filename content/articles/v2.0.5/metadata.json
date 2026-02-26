@@ -1,14 +1,14 @@
 {
   "id": 911,
-  "title": "NocoBase v2.0.5",
-  "title_cn": "NocoBase v2.0.5",
-  "title_ja": null,
+  "title": "NocoBase v2.0.5: Fixed GigaChat plugin not working in version 2.0",
+  "title_cn": "NocoBase v2.0.5：修复 GigaChat 插件在 2.0 中无法使用的问题",
+  "title_ja": "NocoBase v2.0.5：2.0においてGigaChatプラグインが使用できない問題を修正",
   "description": "Release Note of v2.0.5",
   "description_cn": "v2.0.5 更新日志",
-  "description_ja": null,
+  "description_ja": "v2.0.5 リリースノート",
   "slug": "v2.0.5",
-  "publishedAt": null,
-  "status": "drafted",
+  "publishedAt": "2026-02-26T00:00:00.000Z",
+  "status": "published",
   "tags": [
     {
       "createdAt": "2024-06-18T06:25:03.110Z",
@@ -37,14 +37,57 @@
       }
     }
   ],
-  "sub_tags": [],
+  "sub_tags": [
+    {
+      "createdAt": "2025-01-22T06:52:40.087Z",
+      "updatedAt": "2025-02-06T14:24:49.435Z",
+      "id": 116,
+      "title": "Latest",
+      "title_cn": "Latest",
+      "sort": 115,
+      "description": null,
+      "description_cn": null,
+      "displayOnPage": null,
+      "slug": null,
+      "displayOnBlog": null,
+      "keywords": null,
+      "keywords_cn": null,
+      "title_ja": "Latest",
+      "description_ja": null,
+      "keywords_ja": null,
+      "createdById": 9,
+      "updatedById": 9,
+      "article_sub_tags": {
+        "createdAt": "2026-02-26T01:35:06.420Z",
+        "updatedAt": "2026-02-26T01:35:06.420Z",
+        "articles_id": 911,
+        "tags_id": 116
+      }
+    }
+  ],
   "category": null,
-  "cover": null,
+  "cover": {
+    "createdAt": "2026-02-26T01:28:15.326Z",
+    "updatedAt": "2026-02-26T01:28:15.343Z",
+    "id": 2246,
+    "title": "main (7)",
+    "filename": "main (7)-cdjtor.jpg",
+    "extname": ".jpg",
+    "size": 88739,
+    "mimetype": "image/jpeg",
+    "meta": {},
+    "path": "",
+    "url": "https://static-docs.nocobase.com/main%20(7)-cdjtor.jpg",
+    "preview": "https://static-docs.nocobase.com/main%20(7)-cdjtor.jpg",
+    "storageId": 2,
+    "createdById": 22,
+    "updatedById": 22
+  },
   "hideOnListPage": false,
-  "hideOnBlog": false,
+  "hideOnBlog": true,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
-  "ai_generated_ja": null,
-  "updatedAt": "2026-02-26T00:04:46.540Z"
+  "ai_generated_ja": true,
+  "updatedAt": "2026-02-26T01:35:06.405Z"
 }
