@@ -1,13 +1,13 @@
 {
-  "id": 910,
-  "title": "NocoBase v2.0.5: Support configuring browser tab titles for pages, page tabs, popups, and popup tabs",
-  "title_cn": "NocoBase v2.0.5：支持在页面、页面标签、弹窗、弹窗标签配置浏览器页签标题",
-  "title_ja": "NocoBase v2.0.5：",
+  "id": 911,
+  "title": "NocoBase v2.0.5",
+  "title_cn": "NocoBase v2.0.5",
+  "title_ja": null,
   "description": "Release Note of v2.0.5",
   "description_cn": "v2.0.5 更新日志",
-  "description_ja": "v2.0.5 リリースノート",
+  "description_ja": null,
   "slug": "v2.0.5",
-  "publishedAt": "2026-02-25T17:00:00.000Z",
+  "publishedAt": null,
   "status": "drafted",
   "tags": [
     {
@@ -30,48 +30,21 @@
       "createdById": 1,
       "updatedById": 9,
       "articlesTags": {
-        "createdAt": "2026-02-25T16:48:11.067Z",
-        "updatedAt": "2026-02-25T16:48:11.067Z",
+        "createdAt": "2026-02-26T00:04:46.575Z",
+        "updatedAt": "2026-02-26T00:04:46.575Z",
         "tagId": 4,
-        "articleId": 910
+        "articleId": 911
       }
     }
   ],
-  "sub_tags": [
-    {
-      "createdAt": "2025-01-22T06:52:40.087Z",
-      "updatedAt": "2025-02-06T14:24:49.435Z",
-      "id": 116,
-      "title": "Latest",
-      "title_cn": "Latest",
-      "sort": 115,
-      "description": null,
-      "description_cn": null,
-      "displayOnPage": null,
-      "slug": null,
-      "displayOnBlog": null,
-      "keywords": null,
-      "keywords_cn": null,
-      "title_ja": "Latest",
-      "description_ja": null,
-      "keywords_ja": null,
-      "createdById": 9,
-      "updatedById": 9,
-      "article_sub_tags": {
-        "createdAt": "2026-02-25T17:05:54.768Z",
-        "updatedAt": "2026-02-25T17:05:54.768Z",
-        "articles_id": 910,
-        "tags_id": 116
-      }
-    }
-  ],
+  "sub_tags": [],
   "category": null,
   "cover": null,
   "hideOnListPage": false,
-  "hideOnBlog": true,
+  "hideOnBlog": false,
   "author": "nocobase [bot]",
   "ai_generated": false,
   "ai_generated_cn": null,
-  "ai_generated_ja": true,
-  "updatedAt": "2026-02-25T17:05:54.756Z"
+  "ai_generated_ja": null,
+  "updatedAt": "2026-02-26T00:04:46.540Z"
 }
